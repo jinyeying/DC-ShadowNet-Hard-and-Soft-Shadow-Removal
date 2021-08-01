@@ -20,7 +20,7 @@ Our experiments show that all these novel components allow our method to handle 
 
 
 Overview of the proposed method:
-<p align="center"><img src="teaser/network.png" width="98%"></p>
+<p align="center"><img src="network.png" width="98%"></p>
 
 ### Datasets
 SRD Dataset (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and [test](http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr17a_testset.rar) from the [authors](http://www.shengfenghe.com/publications/)).
@@ -34,17 +34,20 @@ SRD Dataset (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9
 [USR: Unpaired Shadow Removal dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
 ### Shadow removal results:
-1.The results of this paper on the SDR dataset can be downloaded here:
+1.[DC-ShadowNet](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0) results on the SDR dataset,
+[All results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 
-2.The results of this paper on the ISTD dataset can be downloaded here:
+2.The results of this paper on the ISTD:
 
 ## Usage 
 ### Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
 
-The original [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
+1.The faster version [MAE evaluation code](https://www.dropbox.com/sh/nva9ddquvgogb5n/AABOHrWx9whMXeItcZfODe9ia?dl=0)
+Set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
+Get the following Table 1 in the main paper.
 
-The faster version
+2.The original [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
 
 ## Citation
 Please kindly cite our paper if you are using our codes:
