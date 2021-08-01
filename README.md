@@ -1,4 +1,4 @@
-# DC-ShadowNet: Hard-and-Soft-Shadow-Removal
+# DC-ShadowNet
 
 ## Introduction
 This is an implementation of the following paper.
@@ -23,7 +23,7 @@ Overview of the proposed method:
 <p align="center"><img src="network.png" width="98%"></p>
 
 ### Datasets
-SRD Dataset (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and [test](http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr17a_testset.rar) from the [authors](http://www.shengfenghe.com/publications/)).
+SRD Dataset (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and test from the [authors](http://www.shengfenghe.com/publications/)).
 
 [LRSS: Soft Shadow dataset](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
 
@@ -33,19 +33,39 @@ SRD Dataset (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9
 
 [USR: Unpaired Shadow Removal dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
-### Shadow removal results:
+### Shadow Removal Results:
 1.[DC-ShadowNet](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0) results on the SDR dataset,
 [All results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 
-2.The results of this paper on the ISTD:
+2.The results of this paper on the AISTD:
+
+3.The results of this paper on the LRSS:
 
 ## Usage 
 ### Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
 
 1.The faster version [MAE evaluation code](https://www.dropbox.com/sh/nva9ddquvgogb5n/AABOHrWx9whMXeItcZfODe9ia?dl=0)
+
 Set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
-Get the following Table 1 in the main paper.
+
+Get the following Table 1 in the main paper on the SRD dataset (size: 256x256).
+
+| Method | Training | All | Shadow | Non-Shadow |
+|------------------|----------|----------|------|------|
+| **DC-ShadowNet** | Unpaired | **4.66** | 7.70 | 3.39 |
+| Mask-ShadowGAN | Unpaired | 6.40 | 11.46 | 4.29 |
+| DSC | Paired | 4.86 | 8.81 | **3.23** |
+| DeShadowNet | Paired | 5.11 | **3.57** | 8.82 |
+| Gong | Prior | 12.35 | 25.43 | 6.91 |
+| Input Image | N/A | 13.77 | 37.40 | 3.96 |
+
+Set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
+
+Get the following Table 2 in the main paper on the AISTD dataset (size: 256x256).
+| Method | Training | All | Shadow | Non-Shadow |
+|------------------|----------|---------|----------|-----|
+| **DC-ShadowNet** | Unpaired | **4.6** | **10.3** | 3.5 |
 
 2.The original [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
 
