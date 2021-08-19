@@ -37,6 +37,7 @@ SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2
 ### Shadow Removal Results:
 1.[DC-ShadowNet](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0) results on the SDR dataset,
 [All Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
+<img src="teaser/result.png" > 
 
 2.The results of this paper on the AISTD:
 
