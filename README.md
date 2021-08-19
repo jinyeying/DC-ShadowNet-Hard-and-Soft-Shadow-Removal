@@ -1,7 +1,7 @@
 # DC-ShadowNet
 
 ## Introduction
-This is an implementation of the following paper.
+This is an implementation of the following paper
 **DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
 Unsupervised Domain-Classifier Guided Network. (ICCV'2021)** 
 Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](https://tanrobby.github.io/pub.html)
@@ -20,22 +20,23 @@ Our experiments show that all these novel components allow our method to handle 
 
 
 Overview of the proposed method:
-<p align="center"><img src="network.png" width="98%"></p>
+<p align="center"><img src="teaser/network.png" width="98%"></p>
 
 ### Datasets
-SRD Dataset (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and test from the [authors](http://www.shengfenghe.com/publications/)).
+SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and test from the [authors](http://www.shengfenghe.com/publications/)).
+[Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
 
-[LRSS: Soft Shadow dataset](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
+[LRSS: Soft Shadow Dataset](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
 
 [ISTD](https://github.com/DeepInsight-PCALab/ST-CGAN) 
 
 [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
 
-[USR: Unpaired Shadow Removal dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
+[USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
 ### Shadow Removal Results:
 1.[DC-ShadowNet](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0) results on the SDR dataset,
-[All results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
+[All Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 
 2.The results of this paper on the AISTD:
 
@@ -67,7 +68,38 @@ Get the following Table 2 in the main paper on the AISTD dataset (size: 256x256)
 |------------------|----------|---------|----------|-----|
 | **DC-ShadowNet** | Unpaired | **4.6** | **10.3** | 3.5 |
 
-2.The original [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
+2.The original version [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
 
-## Citation
+## Pre-trained Model
+Download the pre-trained model [here]
+
+### Test
+python main.py --dataset SRD --phase test
+
+### Train
+1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
+<img src="teaser/chromaticity.png" > 
+
+### Directory
+Download Datasets and run 1, get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
+```
+${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
+|-- dataset
+    |-- SRD
+      |-- trainA ## Shadow 
+      |-- trainB ## Shadow-free 
+      |-- trainC ## Shadow-Free Chromaticity Maps after Illumination Compensation
+      |-- testA  ## Shadow 
+      |-- testB  ## Shadow-free 
+...
+```
+
+2. python main.py --dataset SRD --phase train
+
+## Shadow-Robust Feature
+1.VGG feature visualization code 
+2.Supporting util file
+<img src="teaser/feature_map.png" > 
+
+### Citation
 Please kindly cite our paper if you are using our codes:
