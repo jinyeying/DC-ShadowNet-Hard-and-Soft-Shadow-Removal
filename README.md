@@ -39,9 +39,11 @@ SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2
 [All Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 <img src="teaser/result.png" > 
 
-2.The results of this paper on the AISTD:
+2.[DC-ShadowNet](https://www.dropbox.com/sh/d2bqflmespymtzj/AADyX5NKAkrs5Kq8efkAmGLna?dl=0) results on the AISTD dataset,
+[All Results](https://www.dropbox.com/sh/foqmi8olum6n3qz/AADX3aQ4yzWvKHh4wtAF6YREa?dl=0)
 
-3.The results of this paper on the LRSS:
+3.[DC-ShadowNet] results on the LRSS dataset,
+[All Results]
 
 ## Usage 
 ### Evaluation
