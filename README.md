@@ -23,35 +23,38 @@ Overview of the proposed method:
 <p align="center"><img src="teaser/network.png" width="98%"></p>
 
 ### Datasets
-SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and test from the [authors](http://www.shengfenghe.com/publications/)).
+1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and test from the [authors](http://www.shengfenghe.com/publications/)).
 [Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
 
-[LRSS: Soft Shadow Dataset](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
+2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
 
-[ISTD](https://github.com/DeepInsight-PCALab/ST-CGAN) 
+3. [LRSS: Soft Shadow Dataset](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
 
-[AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
+4. [ISTD](https://github.com/DeepInsight-PCALab/ST-CGAN) 
 
-[USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
+5. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
 ### Shadow Removal Results:
-1.[DC-ShadowNet](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0) results on the SDR dataset,
+1. SDR Dataset
+[DC-ShadowNet Results](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0),
 [All Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 <img src="teaser/result.png" > 
 
-2.[DC-ShadowNet](https://www.dropbox.com/sh/d2bqflmespymtzj/AADyX5NKAkrs5Kq8efkAmGLna?dl=0) results on the AISTD dataset,
+2. AISTD Dataset
+[DC-ShadowNet Results](https://www.dropbox.com/sh/d2bqflmespymtzj/AADyX5NKAkrs5Kq8efkAmGLna?dl=0),
 [All Results](https://www.dropbox.com/sh/foqmi8olum6n3qz/AADX3aQ4yzWvKHh4wtAF6YREa?dl=0)
 
-3.[DC-ShadowNet] results on the LRSS dataset,
-[All Results]
+3. LRSS Soft Shadow Dataset
+[DC-ShadowNet Results](https://www.dropbox.com/sh/i9rto8h1shbc315/AADa6kvxwtUP8EKju2jSKxn2a?dl=0),
+[All Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
 
-## Usage 
 ### Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
 
-1.The faster version [MAE evaluation code](https://www.dropbox.com/sh/nva9ddquvgogb5n/AABOHrWx9whMXeItcZfODe9ia?dl=0)
+1. The faster version [MAE evaluation code](https://www.dropbox.com/sh/nva9ddquvgogb5n/AABOHrWx9whMXeItcZfODe9ia?dl=0)
+2. The original version [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
 
-Set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
+1.1 SRD Dataset, set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
 
 Get the following Table 1 in the main paper on the SRD dataset (size: 256x256).
 
@@ -64,17 +67,24 @@ Get the following Table 1 in the main paper on the SRD dataset (size: 256x256).
 | Gong | Prior | 12.35 | 25.43 | 6.91 |
 | Input Image | N/A | 13.77 | 37.40 | 3.96 |
 
-Set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
+1.2 AISTD Dataset, set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
 
 Get the following Table 2 in the main paper on the AISTD dataset (size: 256x256).
 | Method | Training | All | Shadow | Non-Shadow |
 |------------------|----------|---------|----------|-----|
 | **DC-ShadowNet** | Unpaired | **4.6** | **10.3** | 3.5 |
 
-2.The original version [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
+1.3 LRSS Soft Shadow Dataset, set the paths of the shadow removal result and the dataset in demo_lrss_release.m and then run it.
+
+Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
+| Method | Training | All | 
+|------------------|----------|----------|
+| **DC-ShadowNet** | Unpaired | **3.48** |
+| Input Image | N/A | 12.26 |
 
 ## Pre-trained Model
-Download the pre-trained model [here]
+Download the pre-trained model 
+[here]
 
 ### Test
 python main.py --dataset SRD --phase test
@@ -100,9 +110,12 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 2. python main.py --dataset SRD --phase train
 
 ## Shadow-Robust Feature
-1.VGG feature visualization code 
-2.Supporting util file
+1. VGG feature visualization code 
+2. Supporting util file
 <img src="teaser/feature_map.png" > 
+
+## Boundary Smoothness Loss
+<img src="teaser/smooth_map.png" > 
 
 ### Citation
 Please kindly cite our paper if you are using our codes:
