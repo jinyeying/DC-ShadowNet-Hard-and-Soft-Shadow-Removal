@@ -94,7 +94,7 @@ python main.py --dataset SRD --phase test
 <img src="teaser/chromaticity.png" > 
 
 ### Directory
-Download Datasets and run 1, get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
+2. Download Datasets and run 1, get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- dataset
@@ -111,13 +111,20 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 
 ## Shadow-Robust Feature
 <img src="teaser/feature_map.png" > 
-VGG feature visualization code is in feature_release folder,
+Get the following Figure 5 in the main paper, VGG feature visualization code is in feature_release folder,
+
 python test_VGGfeatures.py
-results are in ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
-ex:./results_VGGfeatures/shadow_VGGfeatures/22/214/visual_179_0.1125.jpg
+
+Results: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
+
 
 ## Boundary Smoothness Loss
-<img src="teaser/smooth_map.png" > 
+<img src="teaser/boundary_map.png" > 
+Get the following Figure 8 in the main paper, shadow boundary code is in boundary_smooth folder,
+
+run getRTVdenMask.m
+
+Results: input_softmask_boundary.jpg
 
 ### Citation
 Please kindly cite our paper if you are using our codes:
