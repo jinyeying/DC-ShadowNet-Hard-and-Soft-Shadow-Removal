@@ -110,9 +110,11 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 2. python main.py --dataset SRD --phase train
 
 ## Shadow-Robust Feature
-1. VGG feature visualization code 
-2. Supporting util file
 <img src="teaser/feature_map.png" > 
+VGG feature visualization code is in feature_release folder,
+python test_VGGfeatures.py
+results are in ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
+ex:./results_VGGfeatures/shadow_VGGfeatures/22/214/visual_179_0.1125.jpg
 
 ## Boundary Smoothness Loss
 <img src="teaser/smooth_map.png" > 
