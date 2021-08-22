@@ -83,11 +83,14 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 | Input Image | N/A | 12.26 |
 
 ## Pre-trained Model
-Download the pre-trained model 
-[here]
+Download the [pre-trained SRD model](https://www.dropbox.com/s/y7247t2pbozhlo7/SRD_params_0500000.pt?dl=0), put in results/SRD/model/
 
 ### Test
-python main.py --dataset SRD --phase test
+python main_test.py --dataset SRD --datasetpath YOURPATH --phase test
+
+Results: results/SRD/iteration/outputB
+
+<img src="results/SRD/500000/inputA_outputB/7.png" >
 
 ### Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
