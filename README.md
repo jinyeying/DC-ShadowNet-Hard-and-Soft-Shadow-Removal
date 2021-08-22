@@ -41,12 +41,18 @@ Overview of the proposed method:
 <img src="teaser/result.png" > 
 
 2. AISTD Dataset
-[DC-ShadowNet Results](https://www.dropbox.com/sh/d2bqflmespymtzj/AADyX5NKAkrs5Kq8efkAmGLna?dl=0),
+[DC-ShadowNet Results](https://www.dropbox.com/sh/14ubek5xe4t5v1l/AABGZYLgp5V4RkYvqGL2NB8ja?dl=0),
 [All Results](https://www.dropbox.com/sh/foqmi8olum6n3qz/AADX3aQ4yzWvKHh4wtAF6YREa?dl=0)
 
 3. LRSS Soft Shadow Dataset
 [DC-ShadowNet Results](https://www.dropbox.com/sh/i9rto8h1shbc315/AADa6kvxwtUP8EKju2jSKxn2a?dl=0),
 [All Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
+
+4. ISTD Dataset
+[DC-ShadowNet Results](https://www.dropbox.com/sh/8hiii6w3kpd3ypf/AACsv7btBXyK5imdqEV_DgDra?dl=0)
+
+5. USR Dataset
+[DC-ShadowNet Results]()
 
 ### Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
@@ -83,7 +89,12 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 | Input Image | N/A | 12.26 |
 
 ## Pre-trained Model
-Download the [pre-trained SRD model](https://www.dropbox.com/s/y7247t2pbozhlo7/SRD_params_0500000.pt?dl=0), put in results/SRD/model/
+1. Download the [pre-trained SRD model](https://www.dropbox.com/s/y7247t2pbozhlo7/SRD_params_0500000.pt?dl=0), put in results/SRD/model/
+
+2. Download the [pre-trained AISTD model](https://www.dropbox.com/s/nv7i4ofal9s9wud/AISTD_params_0500000.pt?dl=0), put in results/AISTD/model/ 
+
+3. Download the [pre-trained ISTD model](https://www.dropbox.com/s/0rro00nqg7tbds3/ISTD_params_0600000.pt?dl=0), put in results/ISTD/model/
+
 
 ### Test
 python main_test.py --dataset SRD --datasetpath YOURPATH --phase test
