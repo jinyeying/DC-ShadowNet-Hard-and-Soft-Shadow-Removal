@@ -52,7 +52,7 @@ Overview of the proposed method:
 [DC-ShadowNet Results](https://www.dropbox.com/sh/8hiii6w3kpd3ypf/AACsv7btBXyK5imdqEV_DgDra?dl=0)
 
 5. USR Dataset
-[DC-ShadowNet Results]()
+[DC-ShadowNet Results](https://www.dropbox.com/sh/m9c8gc5ymbdcahl/AADphRwZLoH2GJENcnSptnWaa?dl=0)
 
 ### Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
@@ -95,6 +95,7 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 
 3. Download the [pre-trained ISTD model](https://www.dropbox.com/s/0rro00nqg7tbds3/ISTD_params_0600000.pt?dl=0), put in results/ISTD/model/
 
+4. Download the [pre-trained USR model](https://www.dropbox.com/s/m4shnrt3jpbdeg1/USR_params_0600000.pt?dl=0), put in results/USR/model/
 
 ### Test
 python main_test.py --dataset SRD --datasetpath YOURPATH --phase test
