@@ -102,6 +102,10 @@ python main_test.py --dataset SRD --datasetpath YOURPATH --phase test
 
 Results: results/SRD/iteration/outputB
 
+rename to the original name, please change the suffix of test images accordingly (.jpg OR .png)
+
+python main_test_original_name.py --dataset SRD --datasetpath YOURPATH --phase test --im_suf_A .jpg
+
 <img src="results/SRD/500000/inputA_outputB/7.png" >
 
 ### Train
