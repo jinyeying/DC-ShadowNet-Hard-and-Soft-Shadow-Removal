@@ -23,7 +23,7 @@ Overview of the proposed method:
 <p align="center"><img src="teaser/network.png" width="98%"></p>
 
 ### Datasets
-1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) and test from the [authors](http://www.shengfenghe.com/publications/)).
+1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduNetdisk](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
 [Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
 
 2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
