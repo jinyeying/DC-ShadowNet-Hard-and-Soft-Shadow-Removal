@@ -96,13 +96,13 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 3. Download the [pre-trained ISTD model](https://www.dropbox.com/s/0rro00nqg7tbds3/ISTD_params_0600000.pt?dl=0), put in results/ISTD/model/
 
 ### Test
-python main_test.py --dataset SRD --datasetpath YOURPATH --phase test
+python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name False
 
-Results: results/SRD/iteration/outputB
+Results: results/SRD/[iteration]/outputB
 
 rename to the original name, please change the suffix of test images accordingly (.jpg OR .png)
 
-python main_test_original_name.py --dataset SRD --datasetpath YOURPATH --phase test --im_suf_A .jpg
+python main_test_original_name.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
 
 <img src="results/SRD/500000/inputA_outputB/7.png" >
 
@@ -124,7 +124,7 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 ...
 ```
 
-2. python main.py --dataset SRD --phase train
+2. python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]
 
 ## Shadow-Robust Feature
 <img src="teaser/feature_map.png" > 
