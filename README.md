@@ -102,7 +102,7 @@ Results: results/SRD/[iteration]/outputB
 
 rename to the original name, please change the suffix of test images accordingly (.jpg OR .png)
 
-python main_test_original_name.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
+python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
 
 <img src="results/SRD/500000/inputA_outputB/7.png" >
 
