@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument('--dom_weight', type=int, default=1, help='Weight for domain classification')
     parser.add_argument('--ch_weight', type=int, default=1, help='Weight for shadow-free chromaticity')
     parser.add_argument('--pecp_weight', type=int, default=1, help='Weight for shadow-robust feature')
-    parser.add_argument('--smooth_weight', type=int, default=1, help='Weight for boundary smoothness')
+    parser.add_argument('--smooth_weight', type=int, default=0.01, help='Weight for boundary smoothness')
 
     parser.add_argument('--use_ch_loss', type=str2bool, default=False, help='use shadow-free chromaticity loss')
     parser.add_argument('--use_pecp_loss', type=str2bool, default=False, help='use shadow-robust feature loss')
