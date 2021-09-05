@@ -19,8 +19,6 @@ Our experiments show that all these novel components allow our method to handle 
 
 
 
-Overview of the proposed method:
-<p align="center"><img src="teaser/network.png" width="98%"></p>
 
 ### Datasets
 1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduNetdisk](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
@@ -111,7 +109,7 @@ python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_orig
 <img src="teaser/chromaticity.png" > 
 
 ### Directory
-2. Download Datasets and run 1, get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
+2. Download Datasets and run 1. get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- dataset
@@ -127,7 +125,6 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 2. python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]
 
 ## Shadow-Robust Feature
-<img src="teaser/feature_map.png" > 
 Get the following Figure 5 in the main paper, VGG feature visualization code is in feature_release folder,
 
 python test_VGGfeatures.py
