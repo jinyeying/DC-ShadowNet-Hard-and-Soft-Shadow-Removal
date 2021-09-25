@@ -132,13 +132,5 @@ python test_VGGfeatures.py
 Results: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
 
 
-## Boundary Smoothness Loss
-<img src="teaser/boundary_map.png" > 
-Get the following Figure 8 in the main paper, shadow boundary code is in boundary_smooth folder,
-
-run getRTVdenMask.m
-
-Results: input_softmask_boundary.jpg
-
 ### Citation
 Please kindly cite our paper if you are using our codes:
