@@ -1,9 +1,11 @@
 # DC-ShadowNet
 
 ## Introduction
-This is an implementation of the following paper
-**DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
-Unsupervised Domain-Classifier Guided Network. (ICCV'2021)** 
+This is an implementation of the following paper.
+> [DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
+Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf)
+>  International Conference on Computer Vision (ICCV'2021)
+
 Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
 ### Abstract
@@ -133,4 +135,13 @@ Results: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual
 
 
 ### Citation
-Please kindly cite our paper if you are using our codes:
+If this work is useful for your research, please cite our paper. 
+```
+@inproceedings{jin2021dc,
+  title={DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using Unsupervised Domain-Classifier Guided Network},
+  author={Jin, Yeying and Sharma, Aashish and Tan, Robby T},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={5027--5036},
+  year={2021}
+}
+```
