@@ -8,6 +8,8 @@ Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/co
 
 Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
+[[Paper Link]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) [[Project Page]](https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal) [[Slides]](https://www.dropbox.com/s/8v99adijq26vxwi/03793.pdf?dl=0) [[Poster]](https://www.dropbox.com/s/9iza4dcv3vf7v7p/iccv21_DC-ShadowNet-poster.pdf?dl=0) (ICCV'2021 Poster)
+
 ### Abstract
 Shadow removal from a single image is generally still an open problem.
 Most existing learning-based methods use supervised learning and require a large number of paired images (shadow and corresponding non-shadow images) for training.
@@ -18,8 +20,6 @@ Specifically, we propose to integrate a shadow/shadow-free domain classifier int
 To train our network, we introduce novel losses based on physics-based shadow-free chromaticity, shadow-robust perceptual features, and boundary smoothness. 
 Moreover, we show that our unsupervised network can be used for test-time training that further improves the results. 
 Our experiments show that all these novel components allow our method to handle soft shadows, and also to perform better on hard shadows both quantitatively and qualitatively than the existing state-of-the-art shadow removal methods.
-
-
 
 
 ### Datasets
@@ -125,6 +125,8 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 ```
 
 2. python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]
+
+(Coming soon...)
 
 ## Shadow-Robust Feature
 Get the following Figure 5 in the main paper, VGG feature visualization code is in feature_release folder,
