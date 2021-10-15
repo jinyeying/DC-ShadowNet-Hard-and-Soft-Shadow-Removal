@@ -8,7 +8,7 @@ Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/co
 
 Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
-[[Paper Link]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) [[Project Page]](https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal) [[Slides]](https://www.dropbox.com/s/8v99adijq26vxwi/03793.pdf?dl=0) [[Poster]](https://www.dropbox.com/s/9iza4dcv3vf7v7p/iccv21_DC-ShadowNet-poster.pdf?dl=0) (ICCV'2021 Poster)
+[[Paper Link]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) [[Project Page]](https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal) (ICCV'2021 Poster)
 
 ### Abstract
 Shadow removal from a single image is generally still an open problem.
