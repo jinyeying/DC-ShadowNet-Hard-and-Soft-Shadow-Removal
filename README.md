@@ -135,6 +135,8 @@ Get the following Figure 5 in the main paper, VGG feature visualization code is 
 
 python test_VGGfeatures.py
 
+<img src="teaser/feature_map.png" > 
+
 Results: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
 
 
