@@ -35,10 +35,11 @@ Our experiments show that all these novel components allow our method to handle 
 5. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
 ### Shadow Removal Results:
+<img src="teaser/hard_shadow.PNG" > 
+
 1. SDR Dataset
 [DC-ShadowNet Results](https://www.dropbox.com/sh/jhm4kxvq9apubq9/AAB5BickFfGhunK5ezJK0R0_a?dl=0),
 [All Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
-<img src="teaser/result.png" > 
 
 2. AISTD Dataset
 [DC-ShadowNet Results](https://www.dropbox.com/sh/14ubek5xe4t5v1l/AABGZYLgp5V4RkYvqGL2NB8ja?dl=0),
@@ -47,6 +48,8 @@ Our experiments show that all these novel components allow our method to handle 
 3. LRSS Soft Shadow Dataset
 [DC-ShadowNet Results](https://www.dropbox.com/sh/i9rto8h1shbc315/AADa6kvxwtUP8EKju2jSKxn2a?dl=0),
 [All Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
+
+<img src="teaser/soft_shadow.PNG" > 
 
 4. ISTD Dataset
 [DC-ShadowNet Results](https://www.dropbox.com/sh/8hiii6w3kpd3ypf/AACsv7btBXyK5imdqEV_DgDra?dl=0)
@@ -98,11 +101,11 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 ### Test
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name False
 
-Results: results/SRD/[iteration]/outputB
-
 rename to the original name, please change the suffix of test images accordingly (.jpg OR .png)
 
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
+
+Results: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outputB
 
 <img src="results/SRD/500000/inputA_outputB/7.png" >
 
