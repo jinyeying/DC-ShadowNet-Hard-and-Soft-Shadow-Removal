@@ -107,7 +107,7 @@ python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_orig
 
 Results: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outputB
 
-<img src="results/SRD/500000/inputA_outputB/7.png" >
+<img src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
 
 ### Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
