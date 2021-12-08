@@ -52,11 +52,11 @@ Our experiments show that all these novel components allow our method to handle 
 <img src="teaser/soft_shadow.PNG" > 
 
 4. ISTD Dataset
-[DC-ShadowNet-ISTD](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0)
+[DC-ShadowNet-ISTD](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0),
 [ISTD-Results](https://www.dropbox.com/sh/gsipgdeb8w7ms04/AAC6C5xvtH4pp4WkHQBr8NeAa?dl=0)
 
 5. USR Dataset
-[DC-ShadowNet-USR](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0)
+[DC-ShadowNet-USR](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0),
 [USR-Results](https://www.dropbox.com/sh/0g63jv4fztpp64o/AABftwGguAERWeARRCk6Gybga?dl=0)
 
 ### Evaluation
