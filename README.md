@@ -37,16 +37,16 @@ Our experiments show that all these novel components allow our method to handle 
 ### Shadow Removal Results:
 <img src="teaser/hard_shadow.PNG" > 
 
-1. SDR Dataset
-[DC-ShadowNet-SDR](https://www.dropbox.com/s/278h3k1hyufvo0l/DC-ShadowNet_SRD.zip?dl=0),
-[SDR-Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
+1. SRD Dataset
+[DC-ShadowNet-SRD](https://www.dropbox.com/s/278h3k1hyufvo0l/DC-ShadowNet_SRD.zip?dl=0),
+[SRD-Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 
 2. AISTD/ISTD+ Dataset
 [DC-ShadowNet-AISTD](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0),
 [AISTD-Results](https://www.dropbox.com/sh/foqmi8olum6n3qz/AADX3aQ4yzWvKHh4wtAF6YREa?dl=0)
 
 3. LRSS Soft Shadow Dataset
-[DC-ShadowNet-LRSS](https://www.dropbox.com/sh/i9rto8h1shbc315/AADa6kvxwtUP8EKju2jSKxn2a?dl=0),
+[DC-ShadowNet-LRSS](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0),
 [LRSS-Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
 
 <img src="teaser/soft_shadow.PNG" > 
