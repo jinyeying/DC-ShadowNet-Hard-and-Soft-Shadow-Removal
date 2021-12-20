@@ -67,23 +67,29 @@ The default root mean squared error (RMSE) evaluation code used by all methods (
 
 1.1 SRD Dataset, set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
 
-Get the following Table 1 in the main paper on the SRD dataset (size: 256x256).
+Get the following Table 1 in the main paper on the SRD (size: 256x256).
 
 | Method | Training | All | Shadow | Non-Shadow |
 |------------------|----------|----------|------|------|
 | **DC-ShadowNet** | Unpaired | **4.66** | 7.70 | 3.39 |
-| Mask-ShadowGAN | Unpaired | 6.40 | 11.46 | 4.29 |
-| DSC | Paired | 4.86 | 8.81 | **3.23** |
-| DeShadowNet | Paired | 5.11 | **3.57** | 8.82 |
-| Gong | Prior | 12.35 | 25.43 | 6.91 |
 | Input Image | N/A | 13.77 | 37.40 | 3.96 |
+
+For SRD （size: 640x840)
+| Method | Training | All | Shadow | Non-Shadow |
+|------------------|----------|----------|------|------|
+| **DC-ShadowNet** | Unpaired | **6.57** | **9.84** | **5.52** |
 
 1.2 AISTD Dataset, set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
 
-Get the following Table 2 in the main paper on the AISTD dataset (size: 256x256).
+Get the following Table 2 in the main paper on the AISTD (size: 256x256).
 | Method | Training | All | Shadow | Non-Shadow |
 |------------------|----------|---------|----------|-----|
 | **DC-ShadowNet** | Unpaired | **4.6** | **10.3** | 3.5 |
+
+For AISTD (size: 480x640)
+| Method | Training | All | Shadow | Non-Shadow |
+|------------------|----------|---------|----------|-----|
+| **DC-ShadowNet** | Unpaired | **6.33** | **11.37** | **5.38** |
 
 1.3 LRSS Soft Shadow Dataset, set the paths of the shadow removal result and the dataset in demo_lrss_release.m and then run it.
 
