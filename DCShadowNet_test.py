@@ -127,9 +127,9 @@ class DCShadowNet(object) :
                     os.makedirs(path_realAfakeB)
 
                 if self.use_original_name:
-                    self.gt_list = [os.path.splitext(f)[0] for f in os.listdir(os.path.join(self.datasetpath, 'testA')) if f.endswith(self.im_suf_A)]
-                    for n, img_name in enumerate(self.gt_list):
-                        print('predicting: %d / %d' % (n + 1, len(self.gt_list)))
+                    self.test_list = [os.path.splitext(f)[0] for f in os.listdir(os.path.join(self.datasetpath, 'testA')) if f.endswith(self.im_suf_A)]
+                    for n, img_name in enumerate(self.test_list):
+                        print('predicting: %d / %d' % (n + 1, len(self.test_list)))
                         
                         img = Image.open(os.path.join('dataset', self.datasetpath, 'testA', img_name + self.im_suf_A)).convert('RGB')
                         
