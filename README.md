@@ -28,6 +28,8 @@ To train our network, we introduce novel losses based on physics-based shadow-fr
 Moreover, we show that our unsupervised network can be used for test-time training that further improves the results. 
 Our experiments show that all these novel components allow our method to handle soft shadows, and also to perform better on hard shadows both quantitatively and qualitatively than the existing state-of-the-art shadow removal methods.
 
+## Prerequisites
+conda env create -f shadow_env.yml
 
 ## Datasets
 1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduNetdisk](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
