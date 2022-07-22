@@ -10,7 +10,7 @@ Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](h
 
 [[Paper Link]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) 
 [[Supplement]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jin_DC-ShadowNet_Single-Image_Hard_ICCV_2021_supplemental.pdf) 
-[![arXiv](https://img.shields.io/badge/arXiv-2012.11806v3-00ff00.svg)](https://arxiv.org/abs/2207.10434)
+[![arXiv](https://img.shields.io/badge/arXiv-2012.11806v3-00ff00.svg)](https://arxiv.org/pdf/2207.10434.pdf)
 [[Slides]](https://www.dropbox.com/s/axgryynoqwdlepx/DC-ShadowNet_release.pdf?dl=0) 
 [[Video]](https://www.dropbox.com/s/mbe82k4ckokm04o/03793.mp4?dl=0)
 
@@ -29,7 +29,7 @@ Moreover, we show that our unsupervised network can be used for test-time traini
 Our experiments show that all these novel components allow our method to handle soft shadows, and also to perform better on hard shadows both quantitatively and qualitatively than the existing state-of-the-art shadow removal methods.
 
 
-### Datasets
+## Datasets
 1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduNetdisk](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
 [Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
 
@@ -41,39 +41,42 @@ Our experiments show that all these novel components allow our method to handle 
 
 5. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
-### Shadow Removal Results:
+## Shadow Removal Results:
 <img src="teaser/hard_shadow.PNG" > 
 
-1. SRD Dataset
+### 1. SRD Dataset Results:
 [DC-ShadowNet-SRD](https://www.dropbox.com/s/278h3k1hyufvo0l/DC-ShadowNet_SRD.zip?dl=0),
 [SRD-Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 
-2. AISTD/ISTD+ Dataset
+### 2. AISTD/ISTD+ Dataset Results:
 [DC-ShadowNet-AISTD](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0),
 [AISTD-Results](https://www.dropbox.com/sh/foqmi8olum6n3qz/AADX3aQ4yzWvKHh4wtAF6YREa?dl=0)
 
-3. LRSS Soft Shadow Dataset
+### 3. LRSS Soft Shadow Dataset Results:
 [DC-ShadowNet-LRSS](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0),
 [LRSS-Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
 
 <img src="teaser/soft_shadow.PNG" > 
 
-4. ISTD Dataset
+### 4. ISTD Dataset Results:
 [DC-ShadowNet-ISTD](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0),
 [ISTD-Results](https://www.dropbox.com/sh/gsipgdeb8w7ms04/AAC6C5xvtH4pp4WkHQBr8NeAa?dl=0)
 
-5. USR Dataset
+### 5. USR Dataset Results:
 [DC-ShadowNet-USR](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0),
 [USR-Results](https://www.dropbox.com/sh/0g63jv4fztpp64o/AABftwGguAERWeARRCk6Gybga?dl=0)
 
-### Evaluation
+## Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
 
 1. The faster version [MAE evaluation code](https://www.dropbox.com/sh/nva9ddquvgogb5n/AABOHrWx9whMXeItcZfODe9ia?dl=0)
 2. The original version [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
 
-1.1 SRD Dataset, set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
-
+### 1. SRD Dataset Evaluation
+set the paths of the shadow removal result and the dataset in demo_srd_release.m and then run it.
+```
+demo_srd_release.m
+```
 Get the following Table 1 in the main paper on the SRD (size: 256x256).
 
 | Method | Training | All | Shadow | Non-Shadow |
@@ -81,12 +84,16 @@ Get the following Table 1 in the main paper on the SRD (size: 256x256).
 | **DC-ShadowNet** | Unpaired | **4.66** | 7.70 | 3.39 |
 | Input Image | N/A | 13.77 | 37.40 | 3.96 |
 
-For SRD （size: 640x840)
+For SRD (size: 640x840)
 | Method | Training | All | Shadow | Non-Shadow |
 |------------------|----------|----------|------|------|
 | **DC-ShadowNet** | Unpaired | **6.57** | **9.84** | **5.52** |
 
-1.2 AISTD Dataset, set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
+### 2. AISTD Dataset Evaluation
+set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
+```
+demo_aistd_release.m
+```
 
 Get the following Table 2 in the main paper on the AISTD (size: 256x256).
 | Method | Training | All | Shadow | Non-Shadow |
@@ -98,7 +105,11 @@ For AISTD (size: 480x640)
 |------------------|----------|---------|----------|-----|
 | **DC-ShadowNet** | Unpaired | **6.33** | **11.37** | **5.38** |
 
-1.3 LRSS Soft Shadow Dataset, set the paths of the shadow removal result and the dataset in demo_lrss_release.m and then run it.
+### 3. LRSS Soft Shadow Dataset Evaluation
+set the paths of the shadow removal result and the dataset in demo_lrss_release.m and then run it.
+```
+demo_lrss_release.m
+```
 
 Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 | Method | Training | All | 
@@ -113,22 +124,22 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 
 3. Download the [pre-trained ISTD model](https://www.dropbox.com/s/0rro00nqg7tbds3/ISTD_params_0600000.pt?dl=0), put in results/ISTD/model/
 
-### Test
+## Test
+```
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name False
-
+```
 rename to the original name, please change the suffix of test images accordingly (.jpg OR .png)
-
+```
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
-
-Results: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outputB
+```
+Results in: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outputB
 
 <img src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
 
-### Train
+## Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
 <img src="teaser/chromaticity.png" > 
 
-### Directory
 2. Download Datasets and run 1. get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
@@ -142,17 +153,18 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 ...
 ```
 
-2. python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]
+3. ```python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]```
 
 
 ## Shadow-Robust Feature
 Get the following Figure 5 in the main paper, VGG feature visualization code is in feature_release folder,
 
+```
 python test_VGGfeatures.py
-
+```
 <img src="teaser/feature_map.png" > 
 
-Results: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
+Results in: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
 
 
 ### Citation
