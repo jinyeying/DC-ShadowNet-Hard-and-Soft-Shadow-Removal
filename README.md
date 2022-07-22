@@ -130,7 +130,7 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 ```
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name False
 ```
-rename to the original name, please change the suffix of test images accordingly (.jpg OR .png)
+rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
 ```
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
 ```
