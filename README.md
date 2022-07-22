@@ -10,7 +10,7 @@ Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](h
 
 [[Paper Link]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) 
 [[Supplement]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jin_DC-ShadowNet_Single-Image_Hard_ICCV_2021_supplemental.pdf) 
-[![arXiv](https://img.shields.io/badge/arXiv-2012.11806v3-00ff00.svg)](https://arxiv.org/pdf/2207.10434.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2207.10434.pdf)
 [[Slides]](https://www.dropbox.com/s/axgryynoqwdlepx/DC-ShadowNet_release.pdf?dl=0) 
 [[Video]](https://www.dropbox.com/s/mbe82k4ckokm04o/03793.mp4?dl=0)
 
