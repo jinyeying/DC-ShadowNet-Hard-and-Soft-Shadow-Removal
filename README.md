@@ -44,7 +44,9 @@ conda env create -f shadow_env.yml
 5. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
 ## Shadow Removal Results:
-<img src="teaser/hard_shadow.PNG" > 
+<p align="left">
+  <img width=550" src="teaser/hard_shadow.PNG">
+</p>
 
 ### 1. SRD Dataset Results:
 [DC-ShadowNet-SRD](https://www.dropbox.com/s/278h3k1hyufvo0l/DC-ShadowNet_SRD.zip?dl=0),
@@ -58,7 +60,9 @@ conda env create -f shadow_env.yml
 [DC-ShadowNet-LRSS](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0),
 [LRSS-Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
 
-<img src="teaser/soft_shadow.PNG" > 
+<p align="left">
+  <img width=850" src="teaser/soft_shadow.PNG">
+</p>
 
 ### 4. ISTD Dataset Results:
 [DC-ShadowNet-ISTD](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0),
@@ -136,11 +140,15 @@ python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_orig
 ```
 Results in: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outputB
 
-<img src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
+<p align="left">
+    <img width=350" src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
+</p>
 
 ## Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
-<img src="teaser/chromaticity.png" > 
+<p align="left">
+  <img width=550" src="teaser/chromaticity.png">
+</p>
 
 2. Download Datasets and run 1. get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
 ```
@@ -164,10 +172,14 @@ Get the following Figure 5 in the main paper, VGG feature visualization code is 
 ```
 python test_VGGfeatures.py
 ```
-<img src="teaser/feature_map.png" > 
+<p align="left">
+  <img width=550" src="teaser/feature_map.png">
+</p>
 
 Results in: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
 
+### Link
+[Zhihu Analysis](https://zhuanlan.zhihu.com/p/474123242)
 
 ### Citation
 If this work is useful for your research, please cite our paper. 
