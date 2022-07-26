@@ -8,10 +8,6 @@ import os
 import collections
 from torchvision import transforms
 
-# def normalize():
-#     return transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-# def inv_normalize():
-#     return transforms.Normalize(mean=[-0.485/0.229, -0.456/0.224, -0.406/0.225], std=[1/0.229, 1/0.224, 1/0.225])
 def normalize():
     return transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 def normalize_grayscale():
