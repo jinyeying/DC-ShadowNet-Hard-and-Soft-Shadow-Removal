@@ -9,8 +9,9 @@ Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/co
 Yeying Jin, [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
 [[Paper Link]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) 
-[[Supplement]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jin_DC-ShadowNet_Single-Image_Hard_ICCV_2021_supplemental.pdf) 
+[[Supplementary]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jin_DC-ShadowNet_Single-Image_Hard_ICCV_2021_supplemental.pdf) 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2207.10434.pdf)
+[[Poster]](https://www.dropbox.com/s/9iza4dcv3vf7v7p/iccv21_DC-ShadowNet-poster.pdf?dl=0)
 [[Slides]](https://www.dropbox.com/s/axgryynoqwdlepx/DC-ShadowNet_release.pdf?dl=0) 
 [[Video]](https://www.dropbox.com/s/mbe82k4ckokm04o/03793.mp4?dl=0)
 
