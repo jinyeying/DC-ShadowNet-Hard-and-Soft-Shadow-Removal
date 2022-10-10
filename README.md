@@ -44,7 +44,7 @@ conda env create -f shadow_env.yml
 
 5. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
-## Shadow Removal Results:
+## [Shadow Removal Results:](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0)
 <p align="left">
   <img width=550" src="teaser/hard_shadow.PNG">
 </p>
