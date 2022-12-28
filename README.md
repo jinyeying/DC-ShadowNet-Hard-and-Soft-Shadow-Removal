@@ -147,8 +147,7 @@ Results in: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outp
 
 ## Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
-
-> [Update] Since students must implement the code as part of their coursework. We will not release our implementation. 
+<br> [Update] We will not release our implementation. 
 
 <p align="left">
   <img width=550" src="teaser/chromaticity.png">
