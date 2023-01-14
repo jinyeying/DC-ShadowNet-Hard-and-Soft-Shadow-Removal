@@ -13,7 +13,6 @@ Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/co
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2207.10434)
 [[Poster]](https://www.dropbox.com/s/f0roq0kkoq9ha1x/DC-ShadowNet_poster.pdf?dl=0)
 [[Slides]](https://www.dropbox.com/s/ymgf7mld0j5zrjw/DC-ShadowNet_slides.pdf?dl=0) 
-[[Video]](https://www.dropbox.com/s/mbe82k4ckokm04o/03793.mp4?dl=0)
 [[Link]](https://zhuanlan.zhihu.com/p/474123242)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dc-shadownet-single-image-hard-and-soft-1/shadow-removal-on-srd)](https://paperswithcode.com/sota/shadow-removal-on-srd?p=dc-shadownet-single-image-hard-and-soft-1)
