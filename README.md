@@ -50,7 +50,7 @@ conda env create -f shadow_env.yml
 </p>
 
 ### 1. SRD Dataset Results:
-[DC-ShadowNet-SRD](https://www.dropbox.com/s/278h3k1hyufvo0l/DC-ShadowNet_SRD.zip?dl=0),
+[DC-ShadowNet-SRD](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0),
 [SRD-Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
 
 ### 2. AISTD/ISTD+ Dataset Results:
