@@ -4,7 +4,7 @@ from torch.nn.parameter import Parameter
 
 
 class ResnetGenerator(nn.Module):
-    def __init__(self, input_nc, output_nc, ngf=64, n_blocks=6, img_size=256, light=False):
+    def __init__(self, input_nc, output_nc, ngf=64, n_blocks=6, img_size=256, light=True):
         assert(n_blocks >= 0)
         super(ResnetGenerator, self).__init__()
         self.input_nc = input_nc
