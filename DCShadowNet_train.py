@@ -200,8 +200,7 @@ class DCShadowNet(object) :
 
             # Update G
             self.G_optim.zero_grad()
-
-            fake_B2A, _, _                  = self.genB2A(real_B)       
+     
             fake_A2B, fake_A2B_Dom_logit, _ = self.genA2B(real_A)       ##yy: fake_B = netG_A2B(real_A), Gb(a)
             fake_B2A, fake_B2A_Dom_logit, _ = self.genB2A(real_B)       ##yy: fake_A = netG_B2A(real_B), Ga(b)
 
