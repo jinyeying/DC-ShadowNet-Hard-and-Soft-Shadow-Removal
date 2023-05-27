@@ -183,7 +183,7 @@ Results in: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/vis
 
 ### Citation
 If this work is useful for your research, please cite our paper. 
-```
+```BibTeX
 @inproceedings{jin2021dc,
   title={DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using Unsupervised Domain-Classifier Guided Network},
   author={Jin, Yeying and Sharma, Aashish and Tan, Robby T},
