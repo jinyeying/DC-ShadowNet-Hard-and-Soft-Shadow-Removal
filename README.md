@@ -3,7 +3,7 @@
 ## Introduction
 This is an implementation of the following paper.
 > [DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
-Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf)
+Unsupervised Domain-Classifier Guided Network.](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) <br>
 >  International Conference on Computer Vision (ICCV'2021)
 
 [Yeying Jin](https://jinyeying.github.io/), [Aashish Sharma](https://aasharma90.github.io/) and [Robby T. Tan](https://tanrobby.github.io/pub.html)
@@ -97,7 +97,7 @@ For SRD (size: 640x840)
 | **DC-ShadowNet** | Unpaired | **6.57** | **9.84** | **5.52** |
 
 ### 2. AISTD Dataset Evaluation
-set the paths of the shadow removal result and the dataset in demo_aistd_release.m and then run it.
+set the paths of the shadow removal result and the dataset in `demo_aistd_release.m` and then run it.
 ```
 demo_aistd_release.m
 ```
@@ -125,11 +125,11 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256).
 | Input Image | N/A | 12.26 |
 
 ## Pre-trained Model
-1. Download the [pre-trained SRD model](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0), put in results/SRD/model/
+1. Download the [pre-trained SRD model](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0), put in `results/SRD/model/`
 
-2. Download the [pre-trained AISTD model](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0), put in results/AISTD/model/ 
+2. Download the [pre-trained AISTD model](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0), put in `results/AISTD/model/` 
 
-3. Download the [pre-trained ISTD model](https://www.dropbox.com/scl/fi/jgdcftwxpvnwxegawbrqx/ISTD_params_0600000.pt?rlkey=pdylqoxxx0krjza4a6uwzgd85&dl=0), put in results/ISTD/model/
+3. Download the [pre-trained ISTD model](https://www.dropbox.com/scl/fi/jgdcftwxpvnwxegawbrqx/ISTD_params_0600000.pt?rlkey=pdylqoxxx0krjza4a6uwzgd85&dl=0), put in `results/ISTD/model/`
 
 ## Test
 ```
@@ -139,7 +139,7 @@ rename to the original name, please change the suffix of test images accordingly
 ```
 python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
 ```
-Results in: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outputB
+Results in: `results/SRD/[iteration]/outputB`; `results/SRD/[iteration]/inputA_outputB`
 
 <p align="left">
     <img width=350" src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
@@ -147,7 +147,7 @@ Results in: results/SRD/[iteration]/outputB; results/SRD/[iteration]/inputA_outp
 
 ## Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
-<br> [Update] We will not release our implementation. 
+<br> [Update] We will release our implementation. 
 
 <p align="left">
   <img width=550" src="teaser/chromaticity.png">
@@ -163,7 +163,6 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
       |-- trainC ## Shadow-Free Chromaticity Maps after Illumination Compensation
       |-- testA  ## Shadow 
       |-- testB  ## Shadow-free 
-...
 ```
 
 3. ```python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]```
@@ -179,7 +178,7 @@ python test_VGGfeatures.py
   <img width=550" src="teaser/feature_map.png">
 </p>
 
-Results in: ./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg
+Results in: `./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg`
 
 ### Citation
 If this work is useful for your research, please cite our paper. 
