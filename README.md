@@ -13,7 +13,7 @@ Unsupervised Domain-Classifier Guided Network](https://openaccess.thecvf.com/con
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2207.10434)
 [[Poster]](https://www.dropbox.com/s/f0roq0kkoq9ha1x/DC-ShadowNet_poster.pdf?dl=0)
 [[Slides]](https://www.dropbox.com/s/ymgf7mld0j5zrjw/DC-ShadowNet_slides.pdf?dl=0) 
-[[Link]](https://zhuanlan.zhihu.com/p/474123242)
+[[Zhihu]](https://zhuanlan.zhihu.com/p/474123242)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dc-shadownet-single-image-hard-and-soft-1/shadow-removal-on-srd)](https://paperswithcode.com/sota/shadow-removal-on-srd?p=dc-shadownet-single-image-hard-and-soft-1)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dc-shadownet-single-image-hard-and-soft-1/shadow-removal-on-istd)](https://paperswithcode.com/sota/shadow-removal-on-istd?p=dc-shadownet-single-image-hard-and-soft-1)
@@ -34,7 +34,7 @@ conda env create -f shadow_env.yml
 
 ## Datasets
 1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduNetdisk](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
-[Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
+<br>[Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
 
 2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
 
@@ -147,16 +147,17 @@ Results in: `results/SRD/[iteration]/outputB`; `results/SRD/[iteration]/inputA_o
 
 ## Train
 1. Implement the papers [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
-<br> [Update] We released our implementation on Sep 8, 2023.
+<br> [Update] We released our implementation on Sep 8, 2023,
+<br> inputs are in `0_Shadow-Free_Chromaticity_matlab/input/`, outputs are in `0_Shadow-Free_Chromaticity_matlab/sfchroma/`.
 ```
-0_Shadow-Free_Chromaticity_matlab\physics_single.m
+0_Shadow-Free_Chromaticity_matlab/physics_single.m
 ```
 ```
-0_Shadow-Free_Chromaticity_matlab\physics_all.m
+0_Shadow-Free_Chromaticity_matlab/physics_all.m
 ```
 
 <p align="left">
-  <img width=550" src="teaser/chromaticity.png">
+  <img width=350" src="teaser/chromaticity.png">
 </p>
 
 2. Download Datasets and run 1. get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the trainC folder, you should see the following directory structure. 
