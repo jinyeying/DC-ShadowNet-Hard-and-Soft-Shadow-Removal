@@ -1,7 +1,7 @@
 close all;
 clear;
 clc;
-save_all = './visual/';
+save_all = './input_output/';
 save_sfch= './sfchroma/';
 if ~exist(save_all, 'dir'), mkdir(save_all); end
 if ~exist(save_sfch, 'dir'), mkdir(save_sfch); end
