@@ -26,7 +26,7 @@ A recent unsupervised method, Mask-ShadowGAN, addresses this limitation. However
 conda env create -f shadow_env.yml
 
 ## Datasets
-1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduNetdisk](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
+1. SRD (please download [train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view) [BaiduPan](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
 <br>[Extracted Shadow Masks in the SRD Dataset](https://github.com/vinthony/ghost-free-shadow-removal)
 
 2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
@@ -37,34 +37,34 @@ conda env create -f shadow_env.yml
 
 5. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
-## [Shadow Removal Results:](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0)
+## Shadow Removal Results: [Dropbox](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [BaiduPan](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) code:gr59
 <p align="left">
   <img width=550" src="teaser/hard_shadow.PNG">
 </p>
 
 ### 1. SRD Dataset Results:
-[DC-ShadowNet-SRD](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0),
-[SRD-Results](https://www.dropbox.com/sh/kg87bt5tcmi535n/AACrGNvLgpWd-UTs6NWep9MLa?dl=0)
+[Dropbox](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1T-KK7iWAyRzBgGg9WUAcAg?pwd=28bv) code:28bv
 
 ### 2. AISTD/ISTD+ Dataset Results:
-[DC-ShadowNet-AISTD](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0),
-[AISTD-Results](https://www.dropbox.com/sh/foqmi8olum6n3qz/AADX3aQ4yzWvKHh4wtAF6YREa?dl=0)
+[Dropbox](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1BdBW2H3YAEJdPyuUYGiiuQ?pwd=3waf) code:3waf
 
 ### 3. LRSS Soft Shadow Dataset Results:
-[DC-ShadowNet-LRSS](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0),
-[LRSS-Results](https://www.dropbox.com/sh/ryku9yr1j4u4898/AABC2gPoM9scASHZ0N6SmwBDa?dl=0)
+[Dropbox](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1yLxFKLH7QJr_f75ITUCRMQ?pwd=bbns) code:bbns
 
 <p align="left">
   <img width=850" src="teaser/soft_shadow.PNG">
 </p>
 
 ### 4. ISTD Dataset Results:
-[DC-ShadowNet-ISTD](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0),
-[ISTD-Results](https://www.dropbox.com/sh/gsipgdeb8w7ms04/AAC6C5xvtH4pp4WkHQBr8NeAa?dl=0)
+[Dropbox](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1mX-bjzSbzojWAhy54JvmTA?pwd=hh4n) code:hh4n
 
 ### 5. USR Dataset Results:
-[DC-ShadowNet-USR](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0),
-[USR-Results](https://www.dropbox.com/sh/0g63jv4fztpp64o/AABftwGguAERWeARRCk6Gybga?dl=0)
+[Dropbox](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1GINuAY3V39TodVdrH3mVlA?pwd=u7ec) code:u7ec
 
 ## Evaluation
 The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
@@ -118,11 +118,25 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256):
 | Input Image | N/A | 12.26 |
 
 ## Pre-trained Model
-1. Download the [pre-trained SRD model](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0), put in `results/SRD/model/`
+1. Download the pre-trained SRD model
+[Dropbox](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1CV1wQkSMR9OOw9ROAdY-pg?pwd=zhd2) code:zhd2,
+put in `results/SRD/model/`
 
-2. Download the [pre-trained AISTD model](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0), put in `results/AISTD/model/` 
+2. Download the pre-trained AISTD model
+[Dropbox](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1wuAZ9ACx6w_2v2MbzrYY7Q?pwd=cfn9) code:cfn9,
+put in `results/AISTD/model/` 
 
-3. Download the [pre-trained ISTD model](https://www.dropbox.com/scl/fi/jgdcftwxpvnwxegawbrqx/ISTD_params_0600000.pt?rlkey=pdylqoxxx0krjza4a6uwzgd85&dl=0), put in `results/ISTD/model/`
+3. Download the pre-trained ISTD model
+[Dropbox](https://www.dropbox.com/scl/fi/jgdcftwxpvnwxegawbrqx/ISTD_params_0600000.pt?rlkey=pdylqoxxx0krjza4a6uwzgd85&dl=0) |
+[BaiduPan](https://pan.baidu.com/s/1qtC0PtCqS5drYRi1-Ta2gw?pwd=b8o0) code:b8o0,
+put in `results/ISTD/model/`
+
+5. Download the pre-trained USR model
+[Dropbox](https://www.dropbox.com/scl/fi/kcj4m88ha3razxqx1c7m6/USR_params_0600000.pt?rlkey=f14177w0udgh07q669q8shj1a&dl=0) |
+[BaiduPan](https://pan.baidu.com/s/16MYozQ3QYT3bAhE-eTehXA?pwd=e0a8) code:e0a8,
+put in `results/USR/model/`
 
 ## Test
 rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
