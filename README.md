@@ -67,13 +67,10 @@ conda env create -f shadow_env.yml
 [BaiduPan](https://pan.baidu.com/s/1GINuAY3V39TodVdrH3mVlA?pwd=u7ec) code:u7ec
 
 ## Evaluation
-The default root mean squared error (RMSE) evaluation code used by all methods (including ours) actually computes mean absolute error (MAE). 
-
-1. The faster version [MAE evaluation code](https://www.dropbox.com/sh/nva9ddquvgogb5n/AABOHrWx9whMXeItcZfODe9ia?dl=0)
-2. The original version [MAE evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view)
+The root mean squared error (RMSE) [evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view) used by all methods (including ours) computes mean absolute error (MAE). 
 
 ### 1. SRD Dataset Evaluation
-set the paths of the shadow removal result and the dataset in `demo_srd_release.m` and then run it.
+set the paths of the shadow removal result and the dataset in `evaluation/demo_srd_release.m` and then run it.
 ```
 demo_srd_release.m
 ```
@@ -90,7 +87,7 @@ For SRD (size: 640x840):
 | **DC-ShadowNet** | Unpaired | **6.57** | **9.84** | **5.52** |
 
 ### 2. AISTD Dataset Evaluation
-set the paths of the shadow removal result and the dataset in `demo_aistd_release.m` and then run it.
+set the paths of the shadow removal result and the dataset in `evaluation/demo_aistd_release.m` and then run it.
 ```
 demo_aistd_release.m
 ```
@@ -106,7 +103,7 @@ For AISTD (size: 480x640):
 | **DC-ShadowNet** | Unpaired | **6.33** | **11.37** | **5.38** |
 
 ### 3. LRSS Soft Shadow Dataset Evaluation
-set the paths of the shadow removal result and the dataset in `demo_lrss_release.m` and then run it.
+set the paths of the shadow removal result and the dataset in `evaluation/demo_lrss_release.m` and then run it.
 ```
 demo_lrss_release.m
 ```
