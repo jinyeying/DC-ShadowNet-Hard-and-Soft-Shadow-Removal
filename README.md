@@ -25,12 +25,13 @@ A recent unsupervised method, Mask-ShadowGAN, addresses this limitation. However
 ## Prerequisites
 ```
 git clone https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal.git
+cd DC-ShadowNet-Hard-and-Soft-Shadow-Removal/
 conda create -n shadow python=3.7
 conda activate shadow
 ```
 ```
 conda install pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3 -c pytorch
-python3 -m pip install -r requirments.txt
+python3 -m pip install -r requirement.txt
 ```
 
 ## Datasets
