@@ -1,7 +1,6 @@
 # DC-ShadowNet (ICCV'2021)
 
 ## Introduction
-This is an implementation of the following paper.
 > [DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
 Unsupervised Domain-Classifier Guided Network](https://arxiv.org/abs/2207.10434)<br>
 >  International Conference on Computer Vision (ICCV'2021)
@@ -23,11 +22,18 @@ Shadow removal from a single image is generally still an open problem. Most exis
 A recent unsupervised method, Mask-ShadowGAN, addresses this limitation. However, it requires a binary mask to represent shadow regions, making it inapplicable to soft shadows. To address the problem, in this paper, we propose an unsupervised domain-classifier guided shadow removal network, DC-ShadowNet. Specifically, we propose to integrate a shadow/shadow-free domain classifier into a generator and its discriminator, enabling them to focus on shadow regions. To train our network, we introduce novel losses based on physics-based shadow-free chromaticity, shadow-robust perceptual features, and boundary smoothness. Moreover, we show that our unsupervised network can be used for test-time training that further improves the results. Our experiments show that all these novel components allow our method to handle soft shadows, and also to perform better on hard shadows both quantitatively and qualitatively than the existing state-of-the-art shadow removal methods.
 
 ## Prerequisites
-conda env create -f shadow_env.yml
+```
+git clone https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal.git
+conda create -n shadow python=3.7
+conda activate shadow
+```
+```
+conda install pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3 -c pytorch
+python3 -m pip install -r requirements.txt
+```
 
 ## Datasets
-1. SRD (please download [train GoogleDrive](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)| [BaiduPan](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)).
-<br>[Extracted Shadow Masks](https://github.com/vinthony/ghost-free-shadow-removal)
+1. SRD (please download [train GoogleDrive](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)| [BaiduPan](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)). [Extracted Shadow Masks](https://github.com/vinthony/ghost-free-shadow-removal).
 
 2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
 
@@ -42,7 +48,7 @@ conda env create -f shadow_env.yml
   <img width=550" src="teaser/hard_shadow.PNG">
 </p>
 
-## Pre-trained Model and Results
+## Pre-trained Models and Results
 
 | Model  | Dropbox | BaiduPan | Model Put in Path| Results Dropbox | Results BaiduPan |
 | :----: | :-----------: | :----------: |:---------------: |  :----------: |:---------------: | 
@@ -56,6 +62,27 @@ conda env create -f shadow_env.yml
 <p align="left">
   <img width=850" src="teaser/soft_shadow.PNG">
 </p>
+
+## Test
+1. [Update main_test_single.py and DCShadowNet_test_single.py] <br>
+Put the test images in `test_input`, results in: `results/output/` `results/input_output/` <br>
+```
+python main_test_single.py
+```
+
+2. For the test dataset `./dataset/SRD/testA/`, results in: `results/SRD/500000(iteration)/outputB` `results/SRD/500000(iteration)]/inputA_outputB` <br>
+rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
+```
+python main_test.py --dataset SRD --datasetpath ./dataset/SRD/testA/ --use_original_name True --im_suf_A .jpg
+```
+```
+python main_test.py --dataset SRD --datasetpath ./dataset/SRD/testA/ --use_original_name False
+```
+
+<p align="left">
+    <img width=350" src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
+</p>
+
 
 
 ## Evaluation
@@ -105,21 +132,6 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256):
 |------------------|----------|----------|
 | **DC-ShadowNet** | Unpaired | **3.48** |
 | Input Image | N/A | 12.26 |
-
-
-## Test
-rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
-```
-python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name True --im_suf_A .jpg
-```
-```
-python main_test.py --dataset SRD --datasetpath [path_to_SRD dataset] --use_original_name False
-```
-Results in: `results/SRD/[iteration]/outputB`; `results/SRD/[iteration]/inputA_outputB`
-
-<p align="left">
-    <img width=350" src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
-</p>
 
 ## Train
 ## Shadow-Free Chromaticity
