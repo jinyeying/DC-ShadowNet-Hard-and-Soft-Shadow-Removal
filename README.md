@@ -12,6 +12,7 @@ Unsupervised Domain-Classifier Guided Network](https://arxiv.org/abs/2207.10434)
 [[Supplementary]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jin_DC-ShadowNet_Single-Image_Hard_ICCV_2021_supplemental.pdf) 
 [[Poster]](https://www.dropbox.com/s/f0roq0kkoq9ha1x/DC-ShadowNet_poster.pdf?dl=0)
 [[Slides]](https://www.dropbox.com/s/ymgf7mld0j5zrjw/DC-ShadowNet_slides.pdf?dl=0) 
+[[Video]](https://www.bilibili.com/video/BV12e411H7bx/?share_source=copy_web&vd_source=2da049ce4677af057256ebc4a00a8292) 
 [[Zhihu]](https://zhuanlan.zhihu.com/p/474123242)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dc-shadownet-single-image-hard-and-soft-1/shadow-removal-on-srd)](https://paperswithcode.com/sota/shadow-removal-on-srd?p=dc-shadownet-single-image-hard-and-soft-1)
@@ -29,11 +30,11 @@ conda activate shadow
 ```
 ```
 conda install pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3 -c pytorch
-python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirments.txt
 ```
 
 ## Datasets
-1. SRD (please download [train GoogleDrive](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)| [BaiduPan](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)). [Extracted Shadow Masks](https://github.com/vinthony/ghost-free-shadow-removal).
+1. SRD (please download train [GoogleDrive](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)| [BaiduPan](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)). [Extracted Shadow Masks](https://github.com/vinthony/ghost-free-shadow-removal).
 
 2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
 
