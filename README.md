@@ -18,10 +18,6 @@ Unsupervised Domain-Classifier Guided Network](https://arxiv.org/abs/2207.10434)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dc-shadownet-single-image-hard-and-soft-1/shadow-removal-on-srd)](https://paperswithcode.com/sota/shadow-removal-on-srd?p=dc-shadownet-single-image-hard-and-soft-1)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dc-shadownet-single-image-hard-and-soft-1/shadow-removal-on-istd)](https://paperswithcode.com/sota/shadow-removal-on-istd?p=dc-shadownet-single-image-hard-and-soft-1)
 
-### Abstract
-Shadow removal from a single image is generally still an open problem. Most existing learning-based methods use supervised learning and require a large number of paired images (shadow and corresponding non-shadow images) for training.
-A recent unsupervised method, Mask-ShadowGAN, addresses this limitation. However, it requires a binary mask to represent shadow regions, making it inapplicable to soft shadows. To address the problem, in this paper, we propose an unsupervised domain-classifier guided shadow removal network, DC-ShadowNet. Specifically, we propose to integrate a shadow/shadow-free domain classifier into a generator and its discriminator, enabling them to focus on shadow regions. To train our network, we introduce novel losses based on physics-based shadow-free chromaticity, shadow-robust perceptual features, and boundary smoothness. Moreover, we show that our unsupervised network can be used for test-time training that further improves the results. Our experiments show that all these novel components allow our method to handle soft shadows, and also to perform better on hard shadows both quantitatively and qualitatively than the existing state-of-the-art shadow removal methods.
-
 ## Prerequisites
 ```
 git clone https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal.git
@@ -62,30 +58,64 @@ python3 -m pip install -r requirements.txt
 
 
 <p align="left">
-  <img width=850" src="teaser/soft_shadow.PNG">
+  <img width=550" src="teaser/soft_shadow.PNG">
 </p>
 
 ## Test
 1. [Update main_test_single.py and DCShadowNet_test_single.py] <br>
-Put the test images in `test_input`, results in: `results/output/` `results/input_output/` <br>
+Put the test images in `test_input`, results in: `results/output/` <br>
 ```
-python main_test_single.py
-```
-
-2. For the test dataset `./dataset/SRD/testA/`, results in: `results/SRD/500000(iteration)/outputB` `results/SRD/500000(iteration)]/inputA_outputB` <br>
-rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
-```
-python main_test.py --dataset SRD --datasetpath ./dataset/SRD/testA/ --use_original_name True --im_suf_A .jpg
-```
-```
-python main_test.py --dataset SRD --datasetpath ./dataset/SRD/testA/ --use_original_name False
+${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
+|-- test_input           ## Shadow
+|-- results
+    |-- output           ## result
 ```
 
+```
+CUDA_VISIBLE_DEVICES='1' python main_test_single.py
+```
 <p align="left">
     <img width=350" src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
 </p>
 
+2. For the test SRD dataset `/dataset/SRD/testA/`, results in: `results/SRD/500000(iteration)/outputB/`
+```
+${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
+|-- dataset
+    |-- SRD
+      |-- testA           ## Shadow
+    |-- AISTD
+      |-- testA           ## Shadow
+    |-- USR
+      |-- testA           ## Shadow
+|-- results
+    |-- SRD
+      |-- model           ## SRD_params_0500000.pt
+      |-- 500000/outputB/ ## result
+    |-- AISTD
+      |-- model           ## AISTD_params_0500000.pt
+      |-- 500000/outputB/ ## result
+    |-- ISTD
+      |-- model           ## ISTD_params_0600000.pt
+      |-- 600000/outputB/ ## result
+    |-- USR
+      |-- model           ## USR_params_0600000.pt
+      |-- 600000/outputB/ ## result
+```
 
+rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
+```
+CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --use_original_name True --im_suf_A .jpg
+```
+```
+CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset AISTD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/AISTD --use_original_name True --im_suf_A .png
+```
+```
+CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset ISTD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/ISTD --use_original_name True --im_suf_A .png
+```
+```
+CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset USR --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/USR --use_original_name True --im_suf_A .jpg
+```
 
 ## Evaluation
 The root mean squared error (RMSE) [evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view) used by all methods (including ours) computes mean absolute error (MAE). 
@@ -176,7 +206,7 @@ Get the following Figure 5 in the main paper, VGG feature visualization code is 
 python test_VGGfeatures.py
 ```
 <p align="left">
-  <img width=550" src="teaser/feature_map.png">
+  <img width=350" src="teaser/feature_map.png">
 </p>
 
 Results in: `./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg`
