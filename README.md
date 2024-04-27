@@ -31,15 +31,18 @@ python3 -m pip install -r requirements.txt
 ```
 
 ## Datasets
-1. SRD (please download train [GoogleDrive](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)| [BaiduPan](https://pan.baidu.com/s/1mj3BoRQ) and [test from the authors](http://www.shengfenghe.com/publications/)). [Extracted Shadow Masks](https://github.com/vinthony/ghost-free-shadow-removal).
+1. SRD [Train](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)|[BaiduPan](https://pan.baidu.com/s/1mj3BoRQ), [Test](https://drive.google.com/file/d/1GTi4BmQ0SJ7diDMmf-b7x2VismmXtfTo/view).
+[Shadow Masks](https://github.com/vinthony/ghost-free-shadow-removal)
 
-2. [AISTD](https://www3.cs.stonybrook.edu/~cvl/projects/SID/index.html) 
+2. AISTD|ISTD+ [[link]](https://github.com/cvlab-stonybrook/SID)
 
-3. [ISTD](https://github.com/DeepInsight-PCALab/ST-CGAN) 
+3. ISTD [[link]](https://drive.google.com/file/d/1I0qw-65KBA6np8vIZzO6oeiOvcDBttAY/view)
 
-4. [USR: Unpaired Shadow Removal Dataset](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
+4. USR: Unpaired Shadow Removal Dataset [[link]](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
-5. [LRSS: Soft Shadow Dataset](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
+5. LRSS: Soft Shadow Dataset [[link]](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
+  
+
 
 ## Shadow Removal Results: [Dropbox](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [BaiduPan](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) code:gr59
 <p align="left">
