@@ -40,8 +40,11 @@ python3 -m pip install -r requirements.txt
 
 4. USR: Unpaired Shadow Removal Dataset [[link]](https://drive.google.com/file/d/1PPAX0W4eyfn1cUrb2aBefnbrmhB1htoJ/view)
 
-5. LRSS: Soft Shadow Dataset [[link]](http://visual.cs.ucl.ac.uk/pubs/softshadows/)
-  
+5. LRSS: Soft Shadow Dataset [[link]](http://visual.cs.ucl.ac.uk/pubs/softshadows/)<br>
+   The LRSS dataset contains 134 shadow images (62 pairs of shadow and shadow-free images). <br>
+   We use 34 pairs for testing and 100 shadow images for training. For shadow-free training images, 28 from LRSS and 72 randomly selected from the USR dataset.<br>
+   |[Dropbox](https://www.dropbox.com/scl/fo/3dt75e23riozwa6uczeqd/ABNkIZKaP8jFarfNrUUjpVg?rlkey=eyfjn7dhd9pbz6rh247ylbt0c&st=01lh80r8&dl=0)|[BaiduPan](https://pan.baidu.com/s/1c_VsDVC92WnvI92v8cldsg?pwd=t9c7) code:t9c7|
+   | :-----------: | :-----------: |
 
 
 ## Shadow Removal Results: [Dropbox](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [BaiduPan](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) code:gr59
@@ -51,7 +54,7 @@ python3 -m pip install -r requirements.txt
 
 ## Pre-trained Models and Results
 
-| Model  | Dropbox | BaiduPan | Model Put in Path| Results Dropbox | Results BaiduPan |
+| Dataset  | Model Dropbox | Model BaiduPan | Model Put in Path| Results Dropbox | Results BaiduPan |
 | :----: | :-----------: | :----------: |:---------------: |  :----------: |:---------------: | 
 | SRD | [Dropbox](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0) |[BaiduPan](https://pan.baidu.com/s/1CV1wQkSMR9OOw9ROAdY-pg?pwd=zhd2) code:zhd2|`results/SRD/model/`| [Dropbox](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0) | [BaiduPan](https://pan.baidu.com/s/1T-KK7iWAyRzBgGg9WUAcAg?pwd=28bv) code:28bv|
 | AISTD/ISTD+ | [Dropbox](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0) |[BaiduPan](https://pan.baidu.com/s/1wuAZ9ACx6w_2v2MbzrYY7Q?pwd=cfn9) code:cfn9 |`results/AISTD/model/`| [Dropbox](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0) | [BaiduPan](https://pan.baidu.com/s/1BdBW2H3YAEJdPyuUYGiiuQ?pwd=3waf) code:3waf|
