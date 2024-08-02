@@ -1,4 +1,4 @@
-# DC-ShadowNet (ICCV'2021)
+<img width="188" alt="WeChatWorkScreenshot_d8efd6f7-a90c-4eb4-9509-dfd784082f80" src="https://github.com/user-attachments/assets/842bb93a-6edd-412f-8d77-06be767f83aa"># DC-ShadowNet (ICCV'2021)
 
 ## Introduction
 > [DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
@@ -190,7 +190,12 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256):
   <img width=450" src="teaser/chromaticity.png">
 </p>
 
-2. Download datasets and run `0_Shadow-Free_Chromaticity_matlab/physics_all.m` to get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the `trainC` folder, you should see the following directory structure. 
+2. Download datasets and run `0_Shadow-Free_Chromaticity_matlab/physics_all.m` to get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the `trainC` folder, you should see the following directory structure.
+<br> [Update] We have released our trainC results.
+
+| SRD [Dropbox](https://www.dropbox.com/scl/fo/tjpau664y1hq6wgvgbfkb/AKWvDeEVIlUX1ZWCBBBgiZs?rlkey=bsjbrz279oyzvngixqt0k795b&dl=0) | SRD [BaiduPan](https://pan.baidu.com/s/16WBQQL4GkXllD-LkvYb6eA?pwd=srdc) code:srdc | ISTD [Dropbox](https://www.dropbox.com/scl/fo/ym4tt6999nqik4aovnmjd/AIPo7LNX9aUmR2X0NQo8_sI?rlkey=fyby4kexn1g009xhb5bkph32e&dl=0) | ISTD [BaiduPan](https://pan.baidu.com/s/1aSPXH6DVpGGc_RfDP7mADQ?pwd=istd) code:istd| USR [Dropbox](https://www.dropbox.com/scl/fo/61437etlg9m4i8b0rhwgx/AMEeRUwkzCMNUAWWEMVxr90?rlkey=ls25f7eojdwmiasyebt9i42j2&dl=0) | USR [BaiduPan](https://pan.baidu.com/s/1mBZ0HrhOeFZCDW10Qtgmtw?pwd=usrc) code:usrc | LRSS [Dropbox](https://www.dropbox.com/scl/fo/s3qcyjp754qsnu90853wq/AHZan-_POf1KAQ6UpbyT6b8?rlkey=0ghgo6m4fegm6gml0p611f28e&dl=0) | LRSS [BaiduPan](https://pan.baidu.com/s/1hjIheKDy3vGChoF0WlW-LQ?pwd=lrss) code:lrss|
+|-----|-----|-----|-----|-----|-----|-----|-----|
+
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- dataset
