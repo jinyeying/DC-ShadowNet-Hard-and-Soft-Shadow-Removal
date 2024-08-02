@@ -1,4 +1,4 @@
-<img width="188" alt="WeChatWorkScreenshot_d8efd6f7-a90c-4eb4-9509-dfd784082f80" src="https://github.com/user-attachments/assets/842bb93a-6edd-412f-8d77-06be767f83aa"># DC-ShadowNet (ICCV'2021)
+# DC-ShadowNet (ICCV'2021)
 
 ## Introduction
 > [DC-ShadowNet: Single-Image Hard and Soft Shadow Removal Using
