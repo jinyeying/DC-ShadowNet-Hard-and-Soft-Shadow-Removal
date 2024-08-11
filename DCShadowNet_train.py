@@ -84,12 +84,12 @@ class DCShadowNet(object) :
         self.trainA = ImageFolder(os.path.join('dataset', self.datasetpath, 'trainA'), train_transform)
         self.trainB = ImageFolder(os.path.join('dataset', self.datasetpath, 'trainB'), train_transform)
         if self.use_ch_loss:
-            self.trainC = ImageFolder(os.path.join('dataset', self.datasetpath, 'train_A_intr2d_light'), train_transform) ##offline load physics ch_norm
+            self.trainC = ImageFolder(os.path.join('dataset', self.datasetpath, 'trainC'), train_transform) ##offline load physics ch_norm
 
         self.testA = ImageFolder(os.path.join('dataset', self.datasetpath, 'testA'), test_transform)
         self.testB = ImageFolder(os.path.join('dataset', self.datasetpath, 'testB'), test_transform)
         if self.use_ch_loss:
-            self.testC = ImageFolder(os.path.join('dataset', self.datasetpath, 'test_A_intr2d_light'), test_transform)    ##offline load physics ch_norm
+            self.testC = ImageFolder(os.path.join('dataset', self.datasetpath, 'testC'), test_transform)    ##offline load physics ch_norm
         
         self.trainA_loader = DataLoader(self.trainA, batch_size=self.batch_size, shuffle=True)
         self.trainB_loader = DataLoader(self.trainB, batch_size=self.batch_size, shuffle=True)
