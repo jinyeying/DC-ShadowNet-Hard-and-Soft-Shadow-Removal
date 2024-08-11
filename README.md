@@ -10,8 +10,8 @@ Unsupervised Domain-Classifier Guided Network](https://arxiv.org/abs/2207.10434)
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2207.10434)
 [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Jin_DC-ShadowNet_Single-Image_Hard_and_Soft_Shadow_Removal_Using_Unsupervised_Domain-Classifier_ICCV_2021_paper.pdf) 
 [[Supplementary]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jin_DC-ShadowNet_Single-Image_Hard_ICCV_2021_supplemental.pdf) 
-[[Poster]](https://www.dropbox.com/s/f0roq0kkoq9ha1x/DC-ShadowNet_poster.pdf?dl=0)
-[[Slides]](https://www.dropbox.com/s/ymgf7mld0j5zrjw/DC-ShadowNet_slides.pdf?dl=0) 
+[[Poster]](poster_slides/DC-ShadowNet_poster.pdf)
+[[Slides]](poster_slides/DC-ShadowNet_slides.pdf) 
 [[Video]](https://www.bilibili.com/video/BV12e411H7bx/?share_source=copy_web&vd_source=2da049ce4677af057256ebc4a00a8292) 
 [[Zhihu]](https://zhuanlan.zhihu.com/p/474123242)
 
@@ -43,11 +43,11 @@ python3 -m pip install -r requirements.txt
 5. LRSS: Soft Shadow Dataset [[link]](http://visual.cs.ucl.ac.uk/pubs/softshadows/)<br>
    The LRSS dataset contains 134 shadow images (62 pairs of shadow and shadow-free images). <br>
    We use 34 pairs for testing and 100 shadow images for training. For shadow-free training images, 28 from LRSS and 72 randomly selected from the USR dataset.<br>
-   |[Dropbox](https://www.dropbox.com/scl/fo/3dt75e23riozwa6uczeqd/ABNkIZKaP8jFarfNrUUjpVg?rlkey=eyfjn7dhd9pbz6rh247ylbt0c&st=01lh80r8&dl=0)|[BaiduPan](https://pan.baidu.com/s/1c_VsDVC92WnvI92v8cldsg?pwd=t9c7) code:t9c7|
+   |[[Dropbox]](https://www.dropbox.com/scl/fo/3dt75e23riozwa6uczeqd/ABNkIZKaP8jFarfNrUUjpVg?rlkey=eyfjn7dhd9pbz6rh247ylbt0c&st=01lh80r8&dl=0)|[[BaiduPan(code:t9c7)]](https://pan.baidu.com/s/1c_VsDVC92WnvI92v8cldsg?pwd=t9c7)|
    | :-----------: | :-----------: |
 
 
-## Shadow Removal Results: [Dropbox](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [BaiduPan](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) code:gr59
+## Shadow Removal Results: [[Dropbox]](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [[BaiduPan(code:gr59)]](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) 
 <p align="left">
   <img width=550" src="teaser/hard_shadow.PNG">
 </p>
@@ -56,11 +56,11 @@ python3 -m pip install -r requirements.txt
 
 | Dataset  | Model Dropbox | Model BaiduPan | Model Put in Path| Results Dropbox | Results BaiduPan |
 | :----: | :-----------: | :----------: |:---------------: |  :----------: |:---------------: | 
-| SRD | [Dropbox](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0) |[BaiduPan](https://pan.baidu.com/s/1CV1wQkSMR9OOw9ROAdY-pg?pwd=zhd2) code:zhd2|`results/SRD/model/`| [Dropbox](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0) | [BaiduPan](https://pan.baidu.com/s/1T-KK7iWAyRzBgGg9WUAcAg?pwd=28bv) code:28bv|
-| AISTD/ISTD+ | [Dropbox](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0) |[BaiduPan](https://pan.baidu.com/s/1wuAZ9ACx6w_2v2MbzrYY7Q?pwd=cfn9) code:cfn9 |`results/AISTD/model/`| [Dropbox](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0) | [BaiduPan](https://pan.baidu.com/s/1BdBW2H3YAEJdPyuUYGiiuQ?pwd=3waf) code:3waf|
-| ISTD | [Dropbox](https://www.dropbox.com/scl/fi/jgdcftwxpvnwxegawbrqx/ISTD_params_0600000.pt?rlkey=pdylqoxxx0krjza4a6uwzgd85&dl=0) |[BaiduPan](https://pan.baidu.com/s/1qtC0PtCqS5drYRi1-Ta2gw?pwd=b8o0) code:b8o0|`results/ISTD/model/`| [Dropbox](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0) |[BaiduPan](https://pan.baidu.com/s/1mX-bjzSbzojWAhy54JvmTA?pwd=hh4n) code:hh4n|
-| USR  | [Dropbox](https://www.dropbox.com/scl/fi/kcj4m88ha3razxqx1c7m6/USR_params_0600000.pt?rlkey=f14177w0udgh07q669q8shj1a&dl=0) | [BaiduPan](https://pan.baidu.com/s/16MYozQ3QYT3bAhE-eTehXA?pwd=e0a8) code:e0a8 |`results/USR/model/`| [Dropbox](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0) | [BaiduPan](https://pan.baidu.com/s/1GINuAY3V39TodVdrH3mVlA?pwd=u7ec) code:u7ec|
-| LRSS  | - | - | -| [Dropbox](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0) | [BaiduPan](https://pan.baidu.com/s/1yLxFKLH7QJr_f75ITUCRMQ?pwd=bbns) code:bbns|
+| SRD | [[Dropbox]](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0) |[[BaiduPan(code:zhd2)]](https://pan.baidu.com/s/1CV1wQkSMR9OOw9ROAdY-pg?pwd=zhd2) |`results/SRD/model/`| [[Dropbox]](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0) | [[BaiduPan(code:28bv)]](https://pan.baidu.com/s/1T-KK7iWAyRzBgGg9WUAcAg?pwd=28bv) |
+| AISTD/ISTD+ | [[Dropbox]](https://www.dropbox.com/scl/fi/k3suqb1ikis4mm6ok6ky4/AISTD_params_0500000.pt?rlkey=e9iylpj6vcpxfcjcud72gw1id&dl=0) |[[BaiduPan(code:cfn9)]](https://pan.baidu.com/s/1wuAZ9ACx6w_2v2MbzrYY7Q?pwd=cfn9)  |`results/AISTD/model/`| [[Dropbox]](https://www.dropbox.com/s/uacmjnnmzfldh10/DC-ShadowNet_AISTD.zip?dl=0) | [[BaiduPan(code:3waf)]](https://pan.baidu.com/s/1BdBW2H3YAEJdPyuUYGiiuQ?pwd=3waf) |
+| ISTD | [[Dropbox]](https://www.dropbox.com/scl/fi/jgdcftwxpvnwxegawbrqx/ISTD_params_0600000.pt?rlkey=pdylqoxxx0krjza4a6uwzgd85&dl=0) |[[BaiduPan(code:b8o0)]](https://pan.baidu.com/s/1qtC0PtCqS5drYRi1-Ta2gw?pwd=b8o0) |`results/ISTD/model/`| [[Dropbox]](https://www.dropbox.com/s/vlo9ng6hufyxuxl/DC-ShadowNet_ISTD.zip?dl=0) |[BaiduPan(code:hh4n)](https://pan.baidu.com/s/1mX-bjzSbzojWAhy54JvmTA?pwd=hh4n) |
+| USR  | [[Dropbox]](https://www.dropbox.com/scl/fi/kcj4m88ha3razxqx1c7m6/USR_params_0600000.pt?rlkey=f14177w0udgh07q669q8shj1a&dl=0) | [BaiduPan(code:e0a8)](https://pan.baidu.com/s/16MYozQ3QYT3bAhE-eTehXA?pwd=e0a8)  |`results/USR/model/`| [[Dropbox]](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0) | [[BaiduPan(code:u7ec)]](https://pan.baidu.com/s/1GINuAY3V39TodVdrH3mVlA?pwd=u7ec) |
+| LRSS  | - | - | -| [[Dropbox]](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0) | [[BaiduPan(code:bbns)]](https://pan.baidu.com/s/1yLxFKLH7QJr_f75ITUCRMQ?pwd=bbns) |
 
 
 <p align="left">
@@ -68,8 +68,8 @@ python3 -m pip install -r requirements.txt
 </p>
 
 ## Test
-1. [Update main_test_single.py and DCShadowNet_test_single.py] <br>
-Put the test images in `test_input`, results in: `results/output/` <br>
+1. Put the test images in `test_input`, results in: `results/output/` <br>
+<br> [Update] We have released `main_test_single.py` and `DCShadowNet_test_single.py` 
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- test_input           ## Shadow
@@ -109,7 +109,7 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
       |-- 600000/outputB/ ## result
 ```
 
-rename to the original name, please change the suffix of test images accordingly (.jpg or .png)
+rename to the original name, please change the suffix of test images accordingly (`.jpg` or `.png`)
 ```
 CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --use_original_name True --im_suf_A .jpg
 ```
@@ -127,7 +127,7 @@ CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset USR --datasetpath /home1/
 The root mean squared error (RMSE) [evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view) used by all methods (including ours) computes mean absolute error (MAE). 
 
 ### 1. SRD Dataset Evaluation
-set the paths of the shadow removal result and the dataset in `evaluation/demo_srd_release.m` and then run it.
+set the paths of the [shadow removal result](https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/blob/de9223d55519777e1621b84d5f0067e3989c11dd/evaluation/demo_srd_release.m#L22) and the dataset in `evaluation/demo_srd_release.m` and then run it.
 ```
 demo_srd_release.m
 ```
@@ -144,7 +144,7 @@ For SRD (size: 640x840):
 | **DC-ShadowNet** | Unpaired | **6.57** | **9.84** | **5.52** |
 
 ### 2. AISTD Dataset Evaluation
-set the paths of the shadow removal result and the dataset in `evaluation/demo_aistd_release.m` and then run it.
+set the paths of the [shadow removal result](https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/blob/eefcc9ee23842847a40f40610c129ecba82f5d21/evaluation/demo_aistd_release.m#L21) and the dataset in `evaluation/demo_aistd_release.m` and then run it.
 ```
 demo_aistd_release.m
 ```
@@ -152,7 +152,7 @@ demo_aistd_release.m
 Get the following Table 2 in the main paper on the AISTD (size: 256x256):
 | Method | Training | All | Shadow | Non-Shadow |
 |------------------|----------|---------|----------|-----|
-| **DC-ShadowNet** | Unpaired | **4.6** | **10.3** | 3.5 |
+| **DC-ShadowNet** | Unpaired | **4.7** | **10.6** | 3.7 |
 
 For AISTD (size: 480x640):
 | Method | Training | All | Shadow | Non-Shadow |
@@ -191,9 +191,8 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256):
 </p>
 
 2. Download datasets and run `0_Shadow-Free_Chromaticity_matlab/physics_all.m` to get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the `trainC` folder, you should see the following directory structure.
-<br> [Update] We have released our trainC results.
 
-| SRD [Dropbox](https://www.dropbox.com/scl/fo/tjpau664y1hq6wgvgbfkb/AKWvDeEVIlUX1ZWCBBBgiZs?rlkey=bsjbrz279oyzvngixqt0k795b&dl=0) | SRD [BaiduPan](https://pan.baidu.com/s/16WBQQL4GkXllD-LkvYb6eA?pwd=srdc) code:srdc | ISTD [Dropbox](https://www.dropbox.com/scl/fo/ym4tt6999nqik4aovnmjd/AIPo7LNX9aUmR2X0NQo8_sI?rlkey=fyby4kexn1g009xhb5bkph32e&dl=0) | ISTD [BaiduPan](https://pan.baidu.com/s/1aSPXH6DVpGGc_RfDP7mADQ?pwd=istd) code:istd| USR [Dropbox](https://www.dropbox.com/scl/fo/61437etlg9m4i8b0rhwgx/AMEeRUwkzCMNUAWWEMVxr90?rlkey=ls25f7eojdwmiasyebt9i42j2&dl=0) | USR [BaiduPan](https://pan.baidu.com/s/1mBZ0HrhOeFZCDW10Qtgmtw?pwd=usrc) code:usrc | LRSS [Dropbox](https://www.dropbox.com/scl/fo/s3qcyjp754qsnu90853wq/AHZan-_POf1KAQ6UpbyT6b8?rlkey=0ghgo6m4fegm6gml0p611f28e&dl=0) | LRSS [BaiduPan](https://pan.baidu.com/s/1hjIheKDy3vGChoF0WlW-LQ?pwd=lrss) code:lrss|
+| SRD [[Dropbox]](https://www.dropbox.com/scl/fo/tjpau664y1hq6wgvgbfkb/AKWvDeEVIlUX1ZWCBBBgiZs?rlkey=bsjbrz279oyzvngixqt0k795b&dl=0) | SRD [[BaiduPan(code:srdc)]](https://pan.baidu.com/s/16WBQQL4GkXllD-LkvYb6eA?pwd=srdc) | ISTD [[Dropbox]](https://www.dropbox.com/scl/fo/ym4tt6999nqik4aovnmjd/AIPo7LNX9aUmR2X0NQo8_sI?rlkey=fyby4kexn1g009xhb5bkph32e&dl=0) | ISTD [[BaiduPan(code:istd)]](https://pan.baidu.com/s/1aSPXH6DVpGGc_RfDP7mADQ?pwd=istd) | USR [[Dropbox]](https://www.dropbox.com/scl/fo/61437etlg9m4i8b0rhwgx/AMEeRUwkzCMNUAWWEMVxr90?rlkey=ls25f7eojdwmiasyebt9i42j2&dl=0) | USR [[BaiduPan(code:usrc)]](https://pan.baidu.com/s/1mBZ0HrhOeFZCDW10Qtgmtw?pwd=usrc)  | LRSS [[Dropbox]](https://www.dropbox.com/scl/fo/s3qcyjp754qsnu90853wq/AHZan-_POf1KAQ6UpbyT6b8?rlkey=0ghgo6m4fegm6gml0p611f28e&dl=0) | LRSS [[BaiduPan(code:less)]](https://pan.baidu.com/s/1hjIheKDy3vGChoF0WlW-LQ?pwd=lrss) |
 |-----|-----|-----|-----|-----|-----|-----|-----|
 
 ```
