@@ -24,8 +24,6 @@ git clone https://github.com/jinyeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal
 cd DC-ShadowNet-Hard-and-Soft-Shadow-Removal/
 conda create -n shadow python=3.7
 conda activate shadow
-```
-```
 conda install pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3 -c pytorch
 python3 -m pip install -r requirements.txt
 ```
@@ -42,18 +40,13 @@ python3 -m pip install -r requirements.txt
 
 5. LRSS: Soft Shadow Dataset [[link]](http://visual.cs.ucl.ac.uk/pubs/softshadows/)<br>
    The LRSS dataset contains 134 shadow images (62 pairs of shadow and shadow-free images). <br>
-   We use 34 pairs for testing and 100 shadow images for training. For shadow-free training images, 28 from LRSS and 72 randomly selected from the USR dataset.<br>
+   We use 34 pairs for testing and 100 shadow images for training. <br>
+   For shadow-free training images, 28 from LRSS and 72 randomly selected from the USR dataset.<br>
    |[[Dropbox]](https://www.dropbox.com/scl/fo/3dt75e23riozwa6uczeqd/ABNkIZKaP8jFarfNrUUjpVg?rlkey=eyfjn7dhd9pbz6rh247ylbt0c&st=01lh80r8&dl=0)|[[BaiduPan(code:t9c7)]](https://pan.baidu.com/s/1c_VsDVC92WnvI92v8cldsg?pwd=t9c7)|
    | :-----------: | :-----------: |
 
 
-## Shadow Removal Results: [[Dropbox]](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [[BaiduPan(code:gr59)]](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) 
-<p align="left">
-  <img width=550" src="teaser/hard_shadow.PNG">
-</p>
-
-## Pre-trained Models and Results
-
+## Pre-trained Models and Shadow Removal Results: [[Dropbox]](https://www.dropbox.com/sh/346iirg55e1qnir/AADqxEu8vyj4KfKR0wOfELjKa?dl=0) | [[BaiduPan(code:gr59)]](https://pan.baidu.com/s/1EyYvjeu6AnJuY3wEuJS74A?pwd=gr59) 
 | Dataset  | Model Dropbox | Model BaiduPan | Model Put in Path| Results Dropbox | Results BaiduPan |
 | :----: | :-----------: | :----------: |:---------------: |  :----------: |:---------------: | 
 | SRD | [[Dropbox]](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0) |[[BaiduPan(code:zhd2)]](https://pan.baidu.com/s/1CV1wQkSMR9OOw9ROAdY-pg?pwd=zhd2) |`results/SRD/model/`| [[Dropbox]](https://www.dropbox.com/s/x5qvbe5gpergqqp/DC-ShadowNet_SRD.zip?dl=0) | [[BaiduPan(code:28bv)]](https://pan.baidu.com/s/1T-KK7iWAyRzBgGg9WUAcAg?pwd=28bv) |
@@ -62,29 +55,26 @@ python3 -m pip install -r requirements.txt
 | USR  | [[Dropbox]](https://www.dropbox.com/scl/fi/kcj4m88ha3razxqx1c7m6/USR_params_0600000.pt?rlkey=f14177w0udgh07q669q8shj1a&dl=0) | [BaiduPan(code:e0a8)](https://pan.baidu.com/s/16MYozQ3QYT3bAhE-eTehXA?pwd=e0a8)  |`results/USR/model/`| [[Dropbox]](https://www.dropbox.com/s/ybmwxtmo7cdljyz/DC-ShadowNet_USR.zip?dl=0) | [[BaiduPan(code:u7ec)]](https://pan.baidu.com/s/1GINuAY3V39TodVdrH3mVlA?pwd=u7ec) |
 | LRSS  | - | - | -| [[Dropbox]](https://www.dropbox.com/s/wi6g12gr1z0xsqi/DC-ShadowNet_Soft.zip?dl=0) | [[BaiduPan(code:bbns)]](https://pan.baidu.com/s/1yLxFKLH7QJr_f75ITUCRMQ?pwd=bbns) |
 
-
-<p align="left">
-  <img width=550" src="teaser/soft_shadow.PNG">
-</p>
-
-## Test
-1. Put the test images in `test_input`, results in: `results/output/` <br>
-<br> [Update] We have released `main_test_single.py` and `DCShadowNet_test_single.py` 
+## Single Image Test
+1. Download the pre-trained SRD model [[Dropbox]](https://www.dropbox.com/scl/fi/icj273vu98w1l9zzwjxt7/SRD_params_0500000.pt?rlkey=6jzx33gwat7t4fv30spw3c0za&dl=0) | [[BaiduPan(code:zhd2)]](https://pan.baidu.com/s/1CV1wQkSMR9OOw9ROAdY-pg?pwd=zhd2), put in `results/SRD/model/`
+2. Put the test images in `test_input`, results in: `results/output/` <br>
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- test_input           ## Shadow
 |-- results
-    |-- output           ## result
+    |-- output           ## Results
 ```
 
 ```
-CUDA_VISIBLE_DEVICES='1' python main_test_single.py
+CUDA_VISIBLE_DEVICES='0' python main_test_single.py
 ```
 <p align="left">
     <img width=350" src="results/SRD/500000/inputA_outputB/IMG_6456.png" >
 </p>
 
-2. For the test SRD dataset `/dataset/SRD/testA/`, results in: `results/SRD/500000(iteration)/outputB/`
+## Dataset Test
+1. Download the pre-trained models (the table above) and place them in the `results/dataset/model/` 
+2. For the SRD test dataset `/dataset/SRD/testA/`, results in: `results/SRD/500000(iteration)/outputB/`
 ```
 ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- dataset
@@ -97,31 +87,106 @@ ${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
 |-- results
     |-- SRD
       |-- model           ## SRD_params_0500000.pt
-      |-- 500000/outputB/ ## result
+      |-- 500000/outputB/ ## Results
     |-- AISTD
       |-- model           ## AISTD_params_0500000.pt
-      |-- 500000/outputB/ ## result
+      |-- 500000/outputB/ ## Results
     |-- ISTD
       |-- model           ## ISTD_params_0600000.pt
-      |-- 600000/outputB/ ## result
+      |-- 600000/outputB/ ## Results
     |-- USR
       |-- model           ## USR_params_0600000.pt
-      |-- 600000/outputB/ ## result
+      |-- 600000/outputB/ ## Results
 ```
 
-rename to the original name, please change the suffix of test images accordingly (`.jpg` or `.png`)
 ```
-CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --use_original_name True --im_suf_A .jpg
-```
-```
-CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset AISTD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/AISTD --use_original_name True --im_suf_A .png
+CUDA_VISIBLE_DEVICES='0' python main_test.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --use_original_name True --im_suf_A .jpg
 ```
 ```
-CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset ISTD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/ISTD --use_original_name True --im_suf_A .png
+CUDA_VISIBLE_DEVICES='0' python main_test.py --dataset AISTD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/AISTD --use_original_name True --im_suf_A .png
 ```
 ```
-CUDA_VISIBLE_DEVICES='1' python main_test.py --dataset USR --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/USR --use_original_name True --im_suf_A .jpg
+CUDA_VISIBLE_DEVICES='0' python main_test.py --dataset ISTD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/ISTD --use_original_name True --im_suf_A .png
 ```
+```
+CUDA_VISIBLE_DEVICES='0' python main_test.py --dataset USR --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/USR --use_original_name True --im_suf_A .jpg
+```
+
+<p align="left">
+  <img width=550" src="teaser/hard_shadow.PNG">
+</p>
+
+<p align="left">
+  <img width=550" src="teaser/soft_shadow.PNG">
+</p>
+
+
+## Train
+```
+${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
+|-- dataset
+    |-- SRD
+      |-- trainA ## Shadow 
+      |-- trainB ## Shadow-free 
+      |-- testA  ## Shadow 
+      |-- testB  ## Shadow-free 
+```
+```
+CUDA_VISIBLE_DEVICES='0' python main_train.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --iteration 1000000
+```
+
+## Train with Shadow-Free Chromaticity Loss
+```
+CUDA_VISIBLE_DEVICES='0' python main_train.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --iteration 1000000 --use_ch_loss True
+```
+```
+${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
+|-- dataset
+    |-- SRD
+      |-- trainA ## Shadow 
+      |-- trainB ## Shadow-free 
+      |-- trainC ## Shadow-Free Chromaticity Maps after Illumination Compensation
+      |-- testA  ## Shadow 
+      |-- testB  ## Shadow-free
+```
+
+The `trainC` folder are the results of `0_Shadow-Free_Chromaticity_matlab/physics_all.m` 
+
+| SRD [[Dropbox]](https://www.dropbox.com/scl/fo/tjpau664y1hq6wgvgbfkb/AKWvDeEVIlUX1ZWCBBBgiZs?rlkey=bsjbrz279oyzvngixqt0k795b&dl=0) | SRD [[BaiduPan(code:srdc)]](https://pan.baidu.com/s/16WBQQL4GkXllD-LkvYb6eA?pwd=srdc) | ISTD [[Dropbox]](https://www.dropbox.com/scl/fo/ym4tt6999nqik4aovnmjd/AIPo7LNX9aUmR2X0NQo8_sI?rlkey=fyby4kexn1g009xhb5bkph32e&dl=0) | ISTD [[BaiduPan(code:istd)]](https://pan.baidu.com/s/1aSPXH6DVpGGc_RfDP7mADQ?pwd=istd) | USR [[Dropbox]](https://www.dropbox.com/scl/fo/61437etlg9m4i8b0rhwgx/AMEeRUwkzCMNUAWWEMVxr90?rlkey=ls25f7eojdwmiasyebt9i42j2&dl=0) | USR [[BaiduPan(code:usrc)]](https://pan.baidu.com/s/1mBZ0HrhOeFZCDW10Qtgmtw?pwd=usrc)  | LRSS [[Dropbox]](https://www.dropbox.com/scl/fo/s3qcyjp754qsnu90853wq/AHZan-_POf1KAQ6UpbyT6b8?rlkey=0ghgo6m4fegm6gml0p611f28e&dl=0) | LRSS [[BaiduPan(code:less)]](https://pan.baidu.com/s/1hjIheKDy3vGChoF0WlW-LQ?pwd=lrss) |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+
+
+Option 1 [MATLAB](./0_Shadow-Free_Chromaticity_matlab): [inputs](./0_Shadow-Free_Chromaticity_matlab/input/) and [results](./0_Shadow-Free_Chromaticity_matlab/sfchroma/)
+```
+0_Shadow-Free_Chromaticity_matlab/physics_all.m
+```
+
+Option 2 [Python](./_Shadow-Free_Chromaticity_python): [inputs](./0_Shadow-Free_Chromaticity_python/input/) and [results](./0_Shadow-Free_Chromaticity_python/sfchroma/)
+```
+cd 0_Shadow-Free_Chromaticity_python
+python physics_all.py
+```
+
+<p align="left">
+  <img width=450" src="teaser/chromaticity.png">
+</p>
+
+
+## Train with Shadow-Robust Feature Loss
+```
+CUDA_VISIBLE_DEVICES='0' python main_train.py --dataset SRD --datasetpath /home1/yeying/DC-ShadowNet-Hard-and-Soft-Shadow-Removal/dataset/SRD --iteration 1000000 --use_pecp_loss True
+```
+
+Get the following Figure 5 in the main paper, VGG feature visualization [results](./feature_release/results_VGGfeatures/shadow_VGGfeatures/22/214/visual_179_0.1125.jpg)
+```
+cd feature_release
+python test_VGGfeatures.py
+```
+<p align="left">
+  <img width=350" src="teaser/feature_map.png">
+</p>
+
+
 
 ## Evaluation
 The root mean squared error (RMSE) [evaluation code](https://drive.google.com/file/d/1-lG8nAJbWajAC4xopx7hGPKbuwYRw4x-/view) used by all methods (including ours) computes mean absolute error (MAE). 
@@ -171,55 +236,6 @@ Get the following Table 3 in the main paper on the LRSS dataset (size: 256x256):
 | **DC-ShadowNet** | Unpaired | **3.48** |
 | Input Image | N/A | 12.26 |
 
-## Train
-## Shadow-Free Chromaticity
-1. Implement [On the removal of shadows from images (TPAMI,05)](https://www.cs.sfu.ca/~mark/ftp/Pami06/pami06.pdf) and [Recovery of Chromaticity Image Free from Shadows via Illumination Invariance (ICCV,03)](https://www.cs.sfu.ca/~mark/ftp/Iccv03ColorWkshp/iccv03wkshp.pdf)
-<br> [Update] We have released our MATLAB and Python implementations on Sep 8, 2023. We recommend the MATLAB.
-
-<br> 1.1 MATLAB: inputs are in `0_Shadow-Free_Chromaticity_matlab/input/`, outputs are in `0_Shadow-Free_Chromaticity_matlab/sfchroma/`.
-```
-0_Shadow-Free_Chromaticity_matlab/physics_all.m
-```
-
-<br> 1.2 Python: inputs are in `0_Shadow-Free_Chromaticity_python/input/`, outputs are in `0_Shadow-Free_Chromaticity_python/sfchroma/`.
-```
-0_Shadow-Free_Chromaticity_python/physics_all.py
-```
-
-<p align="left">
-  <img width=450" src="teaser/chromaticity.png">
-</p>
-
-2. Download datasets and run `0_Shadow-Free_Chromaticity_matlab/physics_all.m` to get the Shadow-Free Chromaticity Maps after Illumination Compensation, and put them in the `trainC` folder, you should see the following directory structure.
-
-| SRD [[Dropbox]](https://www.dropbox.com/scl/fo/tjpau664y1hq6wgvgbfkb/AKWvDeEVIlUX1ZWCBBBgiZs?rlkey=bsjbrz279oyzvngixqt0k795b&dl=0) | SRD [[BaiduPan(code:srdc)]](https://pan.baidu.com/s/16WBQQL4GkXllD-LkvYb6eA?pwd=srdc) | ISTD [[Dropbox]](https://www.dropbox.com/scl/fo/ym4tt6999nqik4aovnmjd/AIPo7LNX9aUmR2X0NQo8_sI?rlkey=fyby4kexn1g009xhb5bkph32e&dl=0) | ISTD [[BaiduPan(code:istd)]](https://pan.baidu.com/s/1aSPXH6DVpGGc_RfDP7mADQ?pwd=istd) | USR [[Dropbox]](https://www.dropbox.com/scl/fo/61437etlg9m4i8b0rhwgx/AMEeRUwkzCMNUAWWEMVxr90?rlkey=ls25f7eojdwmiasyebt9i42j2&dl=0) | USR [[BaiduPan(code:usrc)]](https://pan.baidu.com/s/1mBZ0HrhOeFZCDW10Qtgmtw?pwd=usrc)  | LRSS [[Dropbox]](https://www.dropbox.com/scl/fo/s3qcyjp754qsnu90853wq/AHZan-_POf1KAQ6UpbyT6b8?rlkey=0ghgo6m4fegm6gml0p611f28e&dl=0) | LRSS [[BaiduPan(code:less)]](https://pan.baidu.com/s/1hjIheKDy3vGChoF0WlW-LQ?pwd=lrss) |
-|-----|-----|-----|-----|-----|-----|-----|-----|
-
-```
-${DC-ShadowNet-Hard-and-Soft-Shadow-Removal}
-|-- dataset
-    |-- SRD
-      |-- trainA ## Shadow 
-      |-- trainB ## Shadow-free 
-      |-- trainC ## Shadow-Free Chromaticity Maps after Illumination Compensation
-      |-- testA  ## Shadow 
-      |-- testB  ## Shadow-free 
-```
-
-3. ```python main_train.py --dataset SRD --datasetpath [path_to_SRD dataset] --iteration [iteration]```
-<br> [Update] We have released `DCShadowNet_train.py` on Dec 7, 2022.  
-
-## Shadow-Robust Feature
-Get the following Figure 5 in the main paper, VGG feature visualization code is in the `feature_release` folder,
-
-```
-python test_VGGfeatures.py
-```
-<p align="left">
-  <img width=350" src="teaser/feature_map.png">
-</p>
-
-Results in: `./results_VGGfeatures/shadow_VGGfeatures/layernumber/imagenumber/visual_featurenumber_RMSE.jpg`
 
 ## Acknowledgments
 Code is implemented based [U-GAT-IT](https://github.com/znxlwm/UGATIT-pytorch), we would like to thank them.
@@ -241,5 +257,15 @@ If this work is useful for your research, please cite our paper.
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
   pages={5027--5036},
   year={2021}
+}
+
+@inproceedings{jin2024des3,
+  title={DeS3: Adaptive Attention-Driven Self and Soft Shadow Removal Using ViT Similarity},
+  author={Jin, Yeying and Ye, Wei and Yang, Wenhan and Yuan, Yuan and Tan, Robby T},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={3},
+  pages={2634--2642},
+  year={2024}
 }
 ```
